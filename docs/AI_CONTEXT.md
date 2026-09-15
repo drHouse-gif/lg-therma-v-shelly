@@ -1,55 +1,60 @@
-# AI Context — LG THERMA V ↔ Shelly Pro EM-50 Modbus bridge
+# AI Context — LG THERMA V ↔ Shelly Pro EM-50 Modbus RTU bridge
 
 ## Purpose
 
-This repository documents a local integration between a compatible LG THERMA V heat pump and a Shelly Pro EM-50 fitted with the Shelly Pro Modbus Add-on. The Shelly acts as the Modbus RTU client, translates selected heat-pump registers into Shelly Virtual Components, and optionally exposes those components to Shelly Cloud and Home Assistant.
+This repository documents a local integration between a compatible **LG THERMA V** heat pump and **Shelly Pro EM-50 + Shelly Pro Modbus Add-on**. Shelly acts as the Modbus RTU client, maps selected heat-pump data into exactly nine Virtual Components, and can optionally expose supported entities to Home Assistant.
 
 ## Canonical implementation facts
 
 - Transport: RS-485.
-- Application protocol: Modbus RTU.
+- Protocol: Modbus RTU.
 - Tested serial settings: 9600 baud, 8 data bits, no parity, 1 stop bit (`8N1`).
 - Tested LG slave/server ID: `2`.
-- Tested Shelly serial / MbRtuClient component: `100`.
-- Addressing in Shelly RPC is zero-based.
-- The integration uses exactly **nine** Shelly Virtual Components.
-- IDs used: `boolean:200`, `boolean:201`, `boolean:202`, `number:203`, `number:204`, `number:205`, `number:206`, `number:207`, `number:209`.
-- `number:208` is intentionally unused, leaving one free virtual-component slot.
-- The permanent bridge performs a real device read before enabling writes. This prevents stale virtual defaults from being pushed into the heat pump after reboot.
-- Writes are followed by a read-back so the displayed state represents the physical LG controller.
-- Home Assistant is optional. The standard Shelly integration can expose supported Virtual Components; this project does not itself create a native HA `climate` entity.
+- Shelly Serial / `MbRtuClient` component ID: `100`.
+- Shelly RPC register addressing in this project is zero-based.
+- Recommended runtime: `upstream/lg-therma-v-pro-em50_vc.shelly.js`.
+- The recommended runtime is self-contained and creates, validates, or repairs the nine fixed Virtual Components before starting Modbus control.
+- Legacy/reference files remain in `scripts/01-create-virtual-components.js` and `scripts/02-lg-therma-v-modbus-bridge.js`.
+- Exactly nine Virtual Components are used: `boolean:200`, `boolean:201`, `boolean:202`, `number:203`, `number:204`, `number:205`, `number:206`, `number:207`, `number:209`.
+- `number:208` is intentionally unused.
+- The bridge reads real LG state before enabling writes and confirms supported writes by physical readback.
+- Home Assistant is optional. This project does not create a native Home Assistant `climate` entity.
 
-## Data map used by this project
+## Tested data map
 
 | Semantic value | Modbus area | Zero-based address | Direction | Encoding | Shelly component |
 |---|---|---:|---|---|---|
 | Main power | Coil | 0 | R/W | Boolean | `boolean:200` |
 | DHW enable | Coil | 1 | R/W | Boolean | `boolean:201` |
 | Silent mode | Coil | 2 | R/W | Boolean | `boolean:202` |
-| Heating water target | Holding register | 2 | R/W | signed 16-bit ×0.1 °C | `number:203` |
+| Heating-water target | Holding register | 2 | R/W | signed 16-bit ×0.1 °C | `number:203` |
 | DHW target | Holding register | 8 | R/W | signed 16-bit ×0.1 °C | `number:204` |
-| Inlet water temperature | Input register | 2 | Read | signed 16-bit ×0.1 °C | `number:205` |
-| Outlet water temperature | Input register | 3 | Read | signed 16-bit ×0.1 °C | `number:206` |
+| Inlet-water temperature | Input register | 2 | Read | signed 16-bit ×0.1 °C | `number:205` |
+| Outlet-water temperature | Input register | 3 | Read | signed 16-bit ×0.1 °C | `number:206` |
 | DHW temperature | Input register | 5 | Read | signed 16-bit ×0.1 °C | `number:207` |
 | Error code | Input register | 0 | Read | unsigned 16-bit | `number:209` |
 
 ## Repository reading order for an AI assistant
 
-1. `README.md` — complete installation and operational guide.
-2. `project.yaml` — structured metadata and canonical mappings.
-3. `scripts/01-create-virtual-components.js` — one-time Virtual Component provisioning.
-4. `scripts/02-lg-therma-v-modbus-bridge.js` — permanent runtime bridge.
-5. `docs/LG_THERMA_V_SHELLY_SOLUTION_EN.md` / `BG.md` — article-style documentation.
+1. `llms.txt` — compact retrieval entry point.
+2. `docs/AI_CONTEXT.md` — canonical facts and constraints.
+3. `project.yaml` — structured protocol/register/component metadata.
+4. `README.md` — human installation and troubleshooting guide.
+5. `upstream/lg-therma-v-pro-em50_vc.shelly.js` — recommended self-contained runtime.
+6. `FAQ.md` — natural-language implementation and compatibility questions.
+7. Legacy/reference scripts only when historical context is needed.
 
 ## Important constraints
 
-- LG THERMA V generations and PCBs differ. The exact model service documentation remains authoritative.
-- Do not infer that `CN_COM`, slave ID `2`, or the register map apply to every THERMA V model.
-- Never write values to undocumented registers.
+- This is not a universal LG THERMA V register map.
+- LG THERMA V generations, PCBs, connectors, Modbus enablement procedures, slave IDs, register maps and safe limits differ by exact model.
+- `CN_COM` was associated with communication on the tested installation and must not be generalized.
+- Never write undocumented registers.
 - RS-485 A/B naming can differ across manufacturers.
-- This integration must not bypass LG safety logic.
+- The integration must not bypass LG safety logic.
 - Electrical work inside HVAC equipment requires appropriate competence and isolation procedures.
+- A final manual hardware retest of the combined self-contained VC-provisioning wrapper is required before claiming that exact upstream-formatted file is fully hardware-validated.
 
 ## Search / retrieval keywords
 
-`LG THERMA V`, `Shelly Pro EM-50`, `Shelly Pro Modbus Add-on`, `RS485`, `RS-485`, `Modbus RTU`, `MbRtuClient`, `Serial 100`, `9600 8N1`, `slave 2`, `CN_COM`, `Home Assistant Shelly`, `heat pump Modbus`, `DHW Modbus`, `Shelly Virtual Components`, `local HVAC integration`.
+`LG THERMA V`, `LG THERMA V Modbus`, `Shelly Pro EM-50`, `Shelly Pro Modbus Add-on`, `RS485`, `RS-485`, `Modbus RTU`, `MbRtuClient`, `Serial 100`, `9600 8N1`, `slave 2`, `CN_COM`, `Home Assistant Shelly`, `heat pump Modbus`, `DHW Modbus`, `Shelly Virtual Components`, `local HVAC integration`.
