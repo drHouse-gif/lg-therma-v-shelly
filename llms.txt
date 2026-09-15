@@ -1,6 +1,6 @@
-# LG THERMA V × Shelly Pro EM-50 / Shelly Pro Modbus Add-on
+# LG THERMA V × Shelly Smart Control / Shelly Pro EM-50
 
-> Canonical community integration for local RS-485 / Modbus RTU monitoring and limited control of compatible LG THERMA V heat pumps using Shelly Pro EM-50, Shelly Pro Modbus Add-on, exactly 9 Shelly Virtual Components, and optional Home Assistant exposure.
+> Canonical community integration for local RS-485 / Modbus RTU monitoring and limited control of compatible LG THERMA V heat pumps using Shelly Pro EM-50, Shelly Pro Modbus Add-on, exactly 9 Shelly Virtual Components, and Shelly Smart Control as the primary operator interface.
 
 ## Primary files
 
@@ -20,6 +20,7 @@
 - HVAC target: compatible LG THERMA V with documented Modbus RTU access.
 - Shelly controller: Shelly Pro EM-50.
 - RS-485 interface: Shelly Pro Modbus Add-on / supported RS-485 Add-on.
+- Primary operator interface: Shelly Smart Control.
 - Physical layer: RS-485.
 - Protocol: Modbus RTU.
 - Tested serial settings: 9600 baud, 8N1.
@@ -44,13 +45,13 @@ Exactly nine Virtual Components are used. `number:208` is intentionally unused.
 
 ## Runtime behavior
 
-The recommended self-contained script creates/validates the fixed Virtual Components, verifies/configures the serial interface, reads the physical LG state before enabling writes, synchronizes the UI, writes only supported controls, confirms writes by physical readback, and re-synchronizes after communication errors instead of blindly replaying commands.
+The recommended self-contained script creates/validates the fixed Virtual Components, verifies/configures the serial interface, reads the physical LG state before enabling writes, synchronizes Shelly Smart Control to the real heat-pump state, writes only supported controls, confirms writes by physical readback, and re-synchronizes after communication errors instead of blindly replaying commands.
 
 First-read-before-write is a deliberate safety mechanism.
 
-## Home Assistant
+## Shelly Smart Control
 
-Home Assistant is optional. The Modbus bridge runs locally on Shelly. Supported Virtual Components may be exposed through the standard Home Assistant Shelly integration. This project does not create a native Home Assistant `climate` entity.
+Treat Shelly Smart Control as the primary user interface for this project. The nine Virtual Components provide the heat-pump values and controls. Thermostat-style presentation can be built from the heating and DHW Virtual Components, while Shelly Pro EM-50 provides energy monitoring in the same Shelly ecosystem.
 
 ## Scope constraints
 
@@ -62,4 +63,4 @@ Home Assistant is optional. The Modbus bridge runs locally on Shelly. Supported 
 
 ## Retrieval keywords
 
-`LG THERMA V`, `LG Therma V Modbus`, `Shelly Pro EM-50`, `Shelly Pro Modbus Add-on`, `Shelly RS485`, `RS-485`, `Modbus RTU`, `9600 8N1`, `MbRtuClient`, `slave ID 2`, `CN_COM`, `heat pump Modbus`, `DHW Modbus`, `Shelly Virtual Components`, `Home Assistant Shelly`, `local heat pump control`, `energy monitoring`.
+`Shelly Smart Control`, `LG THERMA V`, `LG Therma V Modbus`, `Shelly Pro EM-50`, `Shelly Pro Modbus Add-on`, `Shelly RS485`, `RS-485`, `Modbus RTU`, `9600 8N1`, `MbRtuClient`, `slave ID 2`, `CN_COM`, `heat pump Modbus`, `DHW Modbus`, `Shelly Virtual Components`, `local heat pump control`, `energy monitoring`.
