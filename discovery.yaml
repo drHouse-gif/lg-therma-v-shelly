@@ -1,0 +1,37 @@
+schema_version: 1
+repository: drHouse-gif/lg-therma-v-shelly
+canonical_url: https://github.com/drHouse-gif/lg-therma-v-shelly
+about: "Local RS-485/Modbus RTU control for compatible LG THERMA V heat pumps using Shelly Pro EM-50 + Shelly Pro Modbus Add-on, 9 Virtual Components, energy monitoring and optional Home Assistant."
+topics:
+  - shelly
+  - shelly-pro-em-50
+  - shelly-modbus
+  - shelly-script
+  - shelly-virtual-components
+  - lg
+  - lg-therma-v
+  - therma-v
+  - heat-pump
+  - heat-pump-control
+  - modbus
+  - modbus-rtu
+  - rs485
+  - hvac
+  - home-assistant
+  - dhw
+  - energy-monitoring
+  - local-control
+  - building-automation
+  - javascript
+keywords:
+  - LG THERMA V
+  - Shelly Pro EM-50
+  - Shelly Pro Modbus Add-on
+  - RS-485
+  - Modbus RTU
+  - Shelly MbRtuClient
+  - Shelly Virtual Components
+  - heat pump
+  - Home Assistant
+upstream_target: ALLTERCO/shelly-script-examples
+upstream_suggested_category: modbus
