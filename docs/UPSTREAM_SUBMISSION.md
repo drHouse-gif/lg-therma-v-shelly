@@ -37,11 +37,11 @@ Add LG THERMA V Modbus RTU bridge for Shelly Pro EM-50
 
 This PR adds a self-contained **RS-485 / Modbus RTU** example for local monitoring and limited control of a compatible **LG THERMA V heat pump** using **Shelly Pro EM-50 + Shelly Pro Modbus Add-on**.
 
-The script maps a small tested Modbus data set into exactly nine Shelly Virtual Components for main power, DHW, Silent Mode, heating-water target, DHW target, inlet/outlet/DHW temperatures and error code.
+The script maps a small tested Modbus data set into exactly nine Shelly Virtual Components for main power, DHW, Silent Mode, heating-water target, DHW target, inlet/outlet/DHW temperatures and error code, with **Shelly Smart Control** as the primary operator interface.
 
 ## Why this is useful
 
-It demonstrates a local HVAC/plant integration where the Shelly itself acts as the Modbus client. Home Assistant and Shelly Cloud can consume the exposed state, but neither is required for the Modbus control path.
+It demonstrates a local HVAC/plant integration where the Shelly itself acts as the Modbus client and the resulting controls and telemetry are presented in **Shelly Smart Control**. No external automation server is required for the Modbus control path.
 
 ## Upstream compatibility
 
@@ -60,6 +60,7 @@ It demonstrates a local HVAC/plant integration where the Shelly itself acts as t
 - Tested LG slave/server ID: 2
 - Shelly Serial / MbRtuClient component: 100
 - Shelly RPC register addressing: zero-based in this example
+- Primary operator interface: Shelly Smart Control
 
 ## Reliability / safety behavior
 
