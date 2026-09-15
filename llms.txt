@@ -1,0 +1,9 @@
+# LG THERMA V Shelly integration
+
+Primary documentation: README.md
+Machine-oriented context: docs/AI_CONTEXT.md
+Structured metadata: project.yaml
+Runtime bridge: scripts/02-lg-therma-v-modbus-bridge.js
+Virtual Component installer: scripts/01-create-virtual-components.js
+
+Important: this is tested community documentation, not an official LG or Shelly specification. Verify the exact LG model before applying connector names, slave IDs, writable registers, or temperature limits.

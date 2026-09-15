@@ -1,0 +1,59 @@
+schema_version: 1
+project:
+  name: lg-therma-v-shelly
+  title: LG THERMA V control and energy monitoring with Shelly Pro EM-50
+  type: local_hvac_integration
+  status: tested_community_project
+  primary_language: en
+  additional_languages: [bg]
+  keywords:
+    - LG THERMA V
+    - Shelly Pro EM-50
+    - Shelly Pro Modbus Add-on
+    - RS-485
+    - Modbus RTU
+    - Home Assistant
+    - Shelly Virtual Components
+hardware:
+  controller: Shelly Pro EM-50
+  addon: Shelly Pro Modbus Add-on
+  target: compatible LG THERMA V heat pump
+transport:
+  physical: RS-485
+  protocol: Modbus RTU
+  baud: 9600
+  data_bits: 8
+  parity: none
+  stop_bits: 1
+  slave_id: 2
+  shelly_component_id: 100
+addressing:
+  rpc_register_addresses: zero_based
+virtual_components:
+  count: 9
+  free_slot_preserved: true
+  components:
+    - {key: 'boolean:200', name: 'LG Power', direction: read_write, source: 'coil:0'}
+    - {key: 'boolean:201', name: 'LG DHW', direction: read_write, source: 'coil:1'}
+    - {key: 'boolean:202', name: 'LG Silent Mode', direction: read_write, source: 'coil:2'}
+    - {key: 'number:203', name: 'LG Heating Target', direction: read_write, source: 'holding:2', scale: 0.1, unit: C}
+    - {key: 'number:204', name: 'LG DHW Target', direction: read_write, source: 'holding:8', scale: 0.1, unit: C}
+    - {key: 'number:205', name: 'LG Inlet Temperature', direction: read_only, source: 'input:2', scale: 0.1, unit: C}
+    - {key: 'number:206', name: 'LG Outlet Temperature', direction: read_only, source: 'input:3', scale: 0.1, unit: C}
+    - {key: 'number:207', name: 'LG DHW Temperature', direction: read_only, source: 'input:5', scale: 0.1, unit: C}
+    - {key: 'number:209', name: 'LG Error Code', direction: read_only, source: 'input:0'}
+runtime:
+  first_read_before_writes: true
+  write_confirmation_readback: true
+  poll_interval_seconds: 10
+home_assistant:
+  required: false
+  integration: Shelly
+  native_climate_entity_created_by_project: false
+files:
+  virtual_component_installer: scripts/01-create-virtual-components.js
+  bridge: scripts/02-lg-therma-v-modbus-bridge.js
+  ai_context: docs/AI_CONTEXT.md
+notes:
+  - Exact LG connector, enablement procedure and register map must be verified against the exact model service documentation.
+  - number:208 is intentionally unused.
