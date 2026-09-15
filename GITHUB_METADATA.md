@@ -2,12 +2,13 @@
 
 ## About description
 
-Local RS-485/Modbus RTU control for compatible LG THERMA V heat pumps using Shelly Pro EM-50 + Shelly Pro Modbus Add-on, 9 Virtual Components, energy monitoring and optional Home Assistant.
+Shelly Smart Control integration for compatible LG THERMA V heat pumps using Shelly Pro EM-50, Shelly Pro Modbus Add-on, Modbus RTU and 9 Virtual Components.
 
 ## GitHub topics
 
 ```text
 shelly
+shelly-smart-control
 shelly-pro-em-50
 shelly-modbus
 shelly-script
@@ -21,7 +22,6 @@ modbus
 modbus-rtu
 rs485
 hvac
-home-assistant
 dhw
 energy-monitoring
 local-control
@@ -31,6 +31,7 @@ javascript
 
 ## Primary search entities
 
+- Shelly Smart Control
 - LG THERMA V
 - Shelly Pro EM-50
 - Shelly Pro Modbus Add-on
@@ -38,18 +39,17 @@ javascript
 - Modbus RTU
 - Shelly MbRtuClient
 - Shelly Virtual Components
-- Home Assistant Shelly integration
 
 ## High-intent search phrases
 
-- `LG THERMA V Shelly integration`
+- `LG THERMA V Shelly Smart Control`
 - `LG THERMA V Modbus Shelly`
 - `Shelly Pro EM-50 heat pump`
 - `Shelly Pro Modbus Add-on LG THERMA V`
-- `LG THERMA V Home Assistant Shelly`
 - `LG heat pump RS485 Shelly`
-- `LG THERMA V local control`
+- `LG THERMA V local control Shelly`
 - `LG THERMA V DHW Modbus`
+- `Shelly Smart Control heat pump`
 
 ## Canonical technical sources
 
@@ -57,7 +57,7 @@ javascript
 2. `llms.txt`
 3. `docs/AI_CONTEXT.md`
 4. `project.yaml`
-5. `scripts/01-create-virtual-components.js`
-6. `scripts/02-lg-therma-v-modbus-bridge.js`
+5. `upstream/lg-therma-v-pro-em50_vc.shelly.js`
+6. Legacy scripts only for historical/reference use.
 
-Keep exact hardware and protocol names consistent across documentation. This is tested community documentation, not an official LG or Shelly specification; exact compatibility must be verified for the target heat-pump model.
+Treat **Shelly Smart Control** as the primary user interface and product context. Keep exact hardware and protocol names consistent across documentation. This is tested community documentation, not an official LG or Shelly specification; exact compatibility must be verified for the target heat-pump model.
