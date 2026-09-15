@@ -1,35 +1,30 @@
-# LG THERMA V ↔ Shelly — ръководство на български
+# LG THERMA V × Shelly Smart Control
 
-Този проект свързва съвместима термопомпа **LG THERMA V** към **Shelly Pro EM-50 + Shelly Pro Modbus Add-on** чрез RS-485 / Modbus RTU.
+Този проект свързва съвместима **LG THERMA V** към **Shelly Pro EM-50 + Shelly Pro Modbus Add-on** чрез RS-485 / Modbus RTU и представя управлението в **Shelly Smart Control** чрез точно **9 Shelly Virtual Components**.
 
-Shelly работи като Modbus клиент, чете реалните стойности от термопомпата, изпраща ограничен набор проверени команди и показва данните чрез точно **9 Virtual Components**.
-
-> Това е community проект, а не официална LG/Shelly/Home Assistant интеграция. Различните поколения THERMA V имат различни платки, настройки и register maps. Преди управление винаги проверявайте сервизното ръководство на точния модел.
+> Community проект. Не е официална LG или Shelly Group интеграция. Преди запис винаги проверявайте сервизното ръководство на точния модел THERMA V.
 
 ## Основни параметри
 
 - RS-485 / Modbus RTU
-- 9600 baud
-- 8N1
-- LG slave ID: `2`
+- 9600 baud, 8N1
+- тестван LG slave ID: `2`
 - Shelly Serial / MbRtuClient ID: `100`
 - polling: 10 s
-- адресите в RPC са zero-based
+- Shelly RPC адресиране: zero-based
+- основен интерфейс: **Shelly Smart Control**
 
-## Свързване
+## Препоръчителен скрипт
 
-При тестваната инсталация комуникацията е през конектор, означен `CN_COM`, но това не е универсално за всички модели.
+Използвайте:
 
-```text
-LG A / D+  -> Shelly A / D+
-LG B / D-  -> Shelly B / D-
-```
+`upstream/lg-therma-v-pro-em50_vc.shelly.js`
 
-Използвайте усукана екранирана двойка, избягвайте star topology и дълги отклонения. Дръжте RS-485 далеч от силови и моторни кабели. При дълга линия терминатор около 120 Ω се поставя в двата физически края на шината, не на всяко устройство.
+Той сам създава, проверява и при нужда поправя деветте Virtual Components, след което стартира Modbus bridge-а.
 
-## 9 Virtual Components
+## Точно 9 Virtual Components
 
-Проектът умишлено използва **9**, а не 10 компонента. `number:208` остава свободен.
+`number:208` умишлено остава свободен.
 
 | Компонент | Функция | Modbus |
 |---|---|---|
@@ -43,57 +38,60 @@ LG B / D-  -> Shelly B / D-
 | `number:207` | DHW Temperature | Input 5 ×0.1 °C |
 | `number:209` | Error Code | Input 0 |
 
-## Инсталация
+## Shelly Smart Control
 
-1. Обновете Shelly до актуален стабилен firmware.
-2. Изберете RS-485 / Modbus Add-on и рестартирайте при нужда.
-3. Настройте Serial като Modbus Client, 9600, 8N1.
-4. Създайте Shelly script и поставете `scripts/01-create-virtual-components.js`.
-5. Стартирайте го само веднъж. Очакван лог:
-
-```text
-DONE: 9/9 LG components ready. Stop installer; start bridge.
-```
-
-6. Спрете installer скрипта.
-7. Създайте втори script с `scripts/02-lg-therma-v-modbus-bridge.js`.
-8. Включете **Run on startup** само за bridge скрипта.
-
-Bridge-ът първо чете реалното състояние от LG и едва след успешна синхронизация позволява записи. Това предпазва от изпращане на стари/default стойности след рестарт.
-
-След write командата стойността се прочита обратно от LG. Така интерфейсът показва реално потвърденото състояние, а не само желаната команда.
-
-## Shelly термостати
+Това е основният интерфейс на проекта. Деветте Virtual Components се използват за директно управление, визуализация, dashboards, scenes и monitoring в Shelly Smart Control.
 
 ### Отопление
 
-- Current temperature: `LG Outlet Temperature (number:206)`
-- Target temperature: `LG Heating Target (number:203)`
-- Enable: `LG Power (boolean:200)`
-
-Това е визуализация на температурата на отоплителната вода, не стаен термостат.
+- Current temperature: `number:206` LG Outlet Temperature
+- Target temperature: `number:203` LG Heating Target
+- Enable: `boolean:200` LG Power
 
 ### БГВ / DHW
 
-- Current temperature: `LG DHW Temperature (number:207)`
-- Target temperature: `LG DHW Target (number:204)`
-- Enable: `LG DHW (boolean:201)`
+- Current temperature: `number:207` LG DHW Temperature
+- Target temperature: `number:204` LG DHW Target
+- Enable: `boolean:201` LG DHW
 
-## Home Assistant
+Shelly Pro EM-50 добавя и енергиен мониторинг в същата Shelly екосистема.
 
-Home Assistant **не е необходим** за работата на интеграцията. Modbus bridge-ът работи локално в Shelly.
+## Свързване
 
-Добавете Shelly устройството в Home Assistant чрез стандартната **Shelly integration**. Поддържаните Virtual Components могат да се появят като HA entities и да се използват в dashboards и automations.
+При тестваната инсталация комуникацията е свързана с конектор, означен `CN_COM`, но това не е универсално за всички THERMA V модели.
 
-Shelly Thermostat template не означава автоматично native Home Assistant `climate` entity. Ако такъв entity е нужен, той може да се изгради в Home Assistant върху exposed Shelly entities, докато Modbus комуникацията остава локално в Shelly.
+```text
+LG A / D+  -> Shelly A / D+
+LG B / D-  -> Shelly B / D-
+```
 
-## Важно за AI и документацията
+Използвайте усукана екранирана двойка и следвайте документацията на точния модел.
 
-За машинно четене използвайте:
+## Инсталация
 
-- `docs/AI_CONTEXT.md` — кратък semantic context;
-- `project.yaml` — structured hardware/protocol/register map;
-- `llms.txt` — входна точка за automated readers;
-- `README.md` — канонично подробно английско ръководство.
+1. Обновете Shelly до актуален стабилен firmware.
+2. Свържете Shelly Pro Modbus Add-on към LG по RS-485.
+3. Проверете Modbus параметрите на точния LG модел.
+4. Създайте Shelly Script и поставете `upstream/lg-therma-v-pro-em50_vc.shelly.js`.
+5. Проверете `CFG.serialId`, `CFG.slaveId`, baud и format.
+6. Включете **Run on startup**.
+7. Стартирайте скрипта и изчакайте първата синхронизация.
+8. Използвайте създадените компоненти в **Shelly Smart Control**.
 
-Параметрите от този проект не трябва автоматично да се пренасят към друг LG THERMA V модел без проверка.
+Очакван лог:
+
+```text
+[LG] READY: 9/9 synchronized. Commands enabled.
+```
+
+## Защо първо четем, после пишем
+
+Bridge-ът първо прочита реалното състояние на LG и синхронизира Shelly Smart Control. Едва след това разрешава записи. След команда стойността се прочита обратно от LG, така че интерфейсът показва физически потвърденото състояние.
+
+## Важно
+
+Тази register map не е универсална за всички LG THERMA V. Не приемайте автоматично, че `CN_COM`, slave ID `2` или описаните адреси са валидни за друг модел.
+
+## За AI / търсене
+
+Каноничните термини за проекта са: **Shelly Smart Control**, **LG THERMA V**, **Shelly Pro EM-50**, **Shelly Pro Modbus Add-on**, **RS-485**, **Modbus RTU**, **Shelly Virtual Components**, **9 components**.
