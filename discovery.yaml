@@ -2,9 +2,11 @@ schema_version: 2
 repository: drHouse-gif/lg-therma-v-shelly
 canonical_url: https://github.com/drHouse-gif/lg-therma-v-shelly
 canonical_runtime: upstream/lg-therma-v-pro-em50_vc.shelly.js
-about: "Local RS-485/Modbus RTU integration for compatible LG THERMA V heat pumps using Shelly Pro EM-50 + Shelly Pro Modbus Add-on, exactly 9 Virtual Components, and optional Home Assistant."
+primary_interface: Shelly Smart Control
+about: "Shelly Smart Control integration for compatible LG THERMA V heat pumps using Shelly Pro EM-50, Shelly Pro Modbus Add-on, Modbus RTU and exactly 9 Virtual Components."
 topics:
   - shelly
+  - shelly-smart-control
   - shelly-pro-em-50
   - shelly-modbus
   - shelly-script
@@ -18,12 +20,12 @@ topics:
   - modbus-rtu
   - rs485
   - hvac
-  - home-assistant
   - dhw
   - energy-monitoring
   - local-control
   - building-automation
 keywords:
+  - Shelly Smart Control
   - LG THERMA V
   - LG THERMA V Modbus RTU
   - Shelly Pro EM-50
@@ -33,12 +35,11 @@ keywords:
   - Shelly MbRtuClient
   - Shelly Virtual Components
   - heat pump Modbus
-  - Home Assistant Shelly
 search_intents:
-  - "LG THERMA V Shelly integration"
+  - "LG THERMA V Shelly Smart Control"
   - "LG THERMA V Modbus RTU Shelly Pro EM-50"
   - "Shelly Pro Modbus Add-on heat pump"
-  - "LG THERMA V Home Assistant Shelly"
+  - "Shelly Smart Control heat pump"
   - "LG heat pump RS485 Modbus Shelly"
   - "CN_COM LG THERMA V Modbus"
 ai_reading_order:
