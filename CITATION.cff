@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this LG THERMA V Shelly Modbus integration, please cite this repository."
+title: "LG THERMA V Modbus RTU integration for Shelly Pro EM-50"
+type: software
+authors:
+  - alias: "drHouse-gif"
+version: "1.0.0"
+date-released: "2026-09-15"
+repository-code: "https://github.com/drHouse-gif/lg-therma-v-shelly"
+url: "https://github.com/drHouse-gif/lg-therma-v-shelly"
+keywords:
+  - "LG THERMA V"
+  - "Shelly Pro EM-50"
+  - "Shelly Pro Modbus Add-on"
+  - "Modbus RTU"
+  - "RS-485"
+  - "MbRtuClient"
+  - "heat pump"
+  - "HVAC"
+  - "Home Assistant"
+  - "Virtual Components"
