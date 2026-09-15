@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "If you use this LG THERMA V Shelly Modbus integration, please cite this repository."
-title: "LG THERMA V Modbus RTU integration for Shelly Pro EM-50"
+message: "If you use this LG THERMA V Shelly Smart Control integration, please cite this repository."
+title: "LG THERMA V Modbus RTU integration for Shelly Smart Control"
 type: software
 authors:
   - alias: "drHouse-gif"
@@ -9,6 +9,7 @@ date-released: "2026-09-15"
 repository-code: "https://github.com/drHouse-gif/lg-therma-v-shelly"
 url: "https://github.com/drHouse-gif/lg-therma-v-shelly"
 keywords:
+  - "Shelly Smart Control"
   - "LG THERMA V"
   - "Shelly Pro EM-50"
   - "Shelly Pro Modbus Add-on"
@@ -17,5 +18,4 @@ keywords:
   - "MbRtuClient"
   - "heat pump"
   - "HVAC"
-  - "Home Assistant"
-  - "Virtual Components"
+  - "Shelly Virtual Components"
