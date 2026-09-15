@@ -1,15 +1,16 @@
 schema_version: 2
 project:
   name: lg-therma-v-shelly
-  title: LG THERMA V Modbus RTU integration for Shelly Pro EM-50
+  title: LG THERMA V Modbus RTU integration for Shelly Smart Control
   type: local_hvac_integration
   status: tested_community_project
   primary_language: en
   additional_languages: [bg]
   canonical_url: https://github.com/drHouse-gif/lg-therma-v-shelly
-  about: "Local RS-485/Modbus RTU integration for compatible LG THERMA V heat pumps using Shelly Pro EM-50 + Shelly Pro Modbus Add-on, 9 Virtual Components, and optional Home Assistant."
+  about: "Shelly Smart Control integration for compatible LG THERMA V heat pumps using Shelly Pro EM-50, Shelly Pro Modbus Add-on, Modbus RTU and exactly 9 Virtual Components."
   topics:
     - shelly
+    - shelly-smart-control
     - shelly-pro-em-50
     - shelly-modbus
     - lg-therma-v
@@ -18,18 +19,23 @@ project:
     - modbus-rtu
     - rs485
     - hvac
-    - home-assistant
     - dhw
     - energy-monitoring
     - local-control
     - building-automation
   keywords:
+    - Shelly Smart Control
     - LG THERMA V Shelly integration
     - LG THERMA V Modbus RTU
     - Shelly Pro EM-50
     - Shelly Pro Modbus Add-on
     - LG heat pump RS485
-    - Home Assistant Shelly heat pump
+    - Shelly Virtual Components
+interface:
+  primary: Shelly Smart Control
+  representation: Shelly Virtual Components
+  thermostat_templates: true
+  purpose: direct control monitoring dashboards scenes and energy visibility
 canonical_runtime:
   path: upstream/lg-therma-v-pro-em50_vc.shelly.js
   self_contained: true
@@ -73,10 +79,6 @@ runtime:
   write_confirmation_readback: true
   resync_after_error: true
   poll_interval_seconds: 10
-home_assistant:
-  required: false
-  integration: Shelly
-  native_climate_entity_created_by_project: false
 upstream:
   target_repository: ALLTERCO/shelly-script-examples
   suggested_path: modbus/LG/lg-therma-v-pro-em50_vc.shelly.js
@@ -94,6 +96,7 @@ files:
   discovery: discovery.yaml
   citation: CITATION.cff
 notes:
+  - Shelly Smart Control is the primary operator interface for this project.
   - Exact LG connector, Modbus enablement procedure, slave ID and register map must be verified against the exact model service documentation.
   - CN_COM was associated with communication on the tested installation and is not universal.
   - number:208 is intentionally unused.
