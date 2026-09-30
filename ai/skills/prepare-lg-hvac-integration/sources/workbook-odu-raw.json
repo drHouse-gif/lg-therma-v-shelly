@@ -1,0 +1,570 @@
+{
+  "sheet": "ODU",
+  "extraction": "xlrd cached cell values, not recalculated formulas",
+  "rows": [
+    {
+      "row": 1,
+      "cells": [
+        "Input Address as Hexadecimal number",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 2,
+      "cells": [
+        "Address",
+        0.0,
+        "",
+        "※ ODU uses 2 addresses per unit.",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 3,
+      "cells": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 4,
+      "cells": [
+        "※ ODU",
+        10.0,
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 5,
+      "cells": [
+        "Point",
+        "Modbus \nAddress\n(decimal)",
+        "Modbus \nAddress\n(hexadecimal)",
+        "Function\nCode",
+        "Object Name\n(XXX : Unit Address Number)",
+        "Value & Meaning",
+        " ■ ODU Product Type : 0xA0"
+      ]
+    },
+    {
+      "row": 6,
+      "cells": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 7,
+      "cells": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        " ■ ODU는 포인트가 많아서 AHU처럼 32개 포인트를 차지 함"
+      ]
+    },
+    {
+      "row": 8,
+      "cells": [
+        1.0,
+        40960.0,
+        "A000",
+        "01",
+        "Compressor Operation",
+        "On:1 / Off:0",
+        ""
+      ]
+    },
+    {
+      "row": 9,
+      "cells": [
+        2.0,
+        40961.0,
+        "A001",
+        "01",
+        "Hot Gas Valve",
+        "On:1 / Off:0 (MultiV 5는 항상 0)",
+        "  Due to the limited number of points, One ODU device uses two product addresses."
+      ]
+    },
+    {
+      "row": 10,
+      "cells": [
+        3.0,
+        40962.0,
+        "A002",
+        "01",
+        "Inverter1 Heater",
+        "On:1 / Off:0",
+        ""
+      ]
+    },
+    {
+      "row": 11,
+      "cells": [
+        4.0,
+        40963.0,
+        "A003",
+        "01",
+        "Inverter2 Heater",
+        "On:1 / Off:0",
+        ""
+      ]
+    },
+    {
+      "row": 12,
+      "cells": [
+        5.0,
+        40964.0,
+        "A004",
+        "01",
+        "Inverter1 Oil Sensor",
+        "Detect Oil:1 / Not Detect Oil:0",
+        ""
+      ]
+    },
+    {
+      "row": 13,
+      "cells": [
+        6.0,
+        40965.0,
+        "A005",
+        "01",
+        "Inverter2 Oil Sensor",
+        "Detect Oil:1 / Not Detect Oil:0",
+        ""
+      ]
+    },
+    {
+      "row": 14,
+      "cells": [
+        7.0,
+        40966.0,
+        "A006",
+        "01",
+        "Inverter1 Backup",
+        "Used:1 / Not Used:0",
+        ""
+      ]
+    },
+    {
+      "row": 15,
+      "cells": [
+        8.0,
+        40967.0,
+        "A007",
+        "01",
+        "Inverter2 Backup",
+        "Used:1 / Not Used:0",
+        ""
+      ]
+    },
+    {
+      "row": 16,
+      "cells": [
+        9.0,
+        40968.0,
+        "A008",
+        "01",
+        "DDC",
+        "On:1 / Off:0 (MultiV 5는 항상 0)",
+        ""
+      ]
+    },
+    {
+      "row": 17,
+      "cells": [
+        1.0,
+        40960.0,
+        "A000",
+        "03",
+        "Refrigerant Type",
+        "R407C:1 R22:2 R410A:3",
+        ""
+      ]
+    },
+    {
+      "row": 18,
+      "cells": [
+        2.0,
+        40961.0,
+        "A001",
+        "03",
+        "Fan1 Frequency",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 19,
+      "cells": [
+        3.0,
+        40962.0,
+        "A002",
+        "03",
+        "High Pressure",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 20,
+      "cells": [
+        4.0,
+        40963.0,
+        "A003",
+        "03",
+        "Low Pressure",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 21,
+      "cells": [
+        5.0,
+        40964.0,
+        "A004",
+        "03",
+        "Compressor Suction Temp",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 22,
+      "cells": [
+        6.0,
+        40965.0,
+        "A005",
+        "03",
+        "Liquid Pipe Temp",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 23,
+      "cells": [
+        7.0,
+        40966.0,
+        "A006",
+        "03",
+        "Heat Exchange Temp",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 24,
+      "cells": [
+        8.0,
+        40967.0,
+        "A007",
+        "03",
+        "Outdoor Unit EEV",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 25,
+      "cells": [
+        9.0,
+        40968.0,
+        "A008",
+        "03",
+        "Over-cooler EEV",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 26,
+      "cells": [
+        10.0,
+        40969.0,
+        "A009",
+        "03",
+        "Master Inverter1 Discharge Temp",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 27,
+      "cells": [
+        11.0,
+        40970.0,
+        "A00A",
+        "03",
+        "Air Temperature",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 28,
+      "cells": [
+        12.0,
+        40971.0,
+        "A00B",
+        "03",
+        "Operation Mode",
+        "Stop:1 Cool:2 Heat:3",
+        ""
+      ]
+    },
+    {
+      "row": 29,
+      "cells": [
+        13.0,
+        40972.0,
+        "A00C",
+        "03",
+        "Error Code",
+        "0~255",
+        ""
+      ]
+    },
+    {
+      "row": 30,
+      "cells": [
+        14.0,
+        40973.0,
+        "A00D",
+        "03",
+        "Master Inverter1 Compressor Frequency",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 31,
+      "cells": [
+        15.0,
+        40974.0,
+        "A00E",
+        "03",
+        "Master Inverter2 Compressor Frequency",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 32,
+      "cells": [
+        16.0,
+        40975.0,
+        "A00F",
+        "03",
+        "Fan2 Frequency",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 33,
+      "cells": [
+        17.0,
+        40976.0,
+        "A010",
+        "03",
+        "Master Inverter2 Discharge Temp",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 34,
+      "cells": [
+        18.0,
+        40977.0,
+        "A011",
+        "03",
+        "Std1 Discharge Temp",
+        "(MultiV 5는 항상 0)",
+        ""
+      ]
+    },
+    {
+      "row": 35,
+      "cells": [
+        19.0,
+        40978.0,
+        "A012",
+        "03",
+        "Std2 Discharge Temp",
+        "(MultiV 5는 항상 0)",
+        ""
+      ]
+    },
+    {
+      "row": 36,
+      "cells": [
+        20.0,
+        40979.0,
+        "A013",
+        "03",
+        "Upper Hex Temp",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 37,
+      "cells": [
+        21.0,
+        40980.0,
+        "A014",
+        "03",
+        "Lower Hex Temp",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 38,
+      "cells": [
+        22.0,
+        40981.0,
+        "A015",
+        "03",
+        "Sub Cool Pipe In Temp",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 39,
+      "cells": [
+        23.0,
+        40982.0,
+        "A016",
+        "03",
+        "Sub Cool Pipe Out Temp",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 40,
+      "cells": [
+        24.0,
+        40983.0,
+        "A017",
+        "03",
+        "Sub EEV Pulse",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 41,
+      "cells": [
+        25.0,
+        40984.0,
+        "A018",
+        "03",
+        "Oil Equalizing EEV",
+        "(MultiV 5는 항상 0)",
+        ""
+      ]
+    },
+    {
+      "row": 42,
+      "cells": [
+        26.0,
+        40985.0,
+        "A019",
+        "03",
+        "Vapor Injection EEV1",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 43,
+      "cells": [
+        27.0,
+        40986.0,
+        "A01A",
+        "03",
+        "Vapor Injection EEV2",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 44,
+      "cells": [
+        28.0,
+        40987.0,
+        "A01B",
+        "03",
+        "Slave1 Inverter1 Compressor Frequency",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 45,
+      "cells": [
+        29.0,
+        40988.0,
+        "A01C",
+        "03",
+        "Slave1 Inverter2 Compressor Frequency",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 46,
+      "cells": [
+        30.0,
+        40989.0,
+        "A01D",
+        "03",
+        "Slave1 Inverter1 Discharge Temp",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 47,
+      "cells": [
+        31.0,
+        40990.0,
+        "A01E",
+        "03",
+        "Slave1 Inverter2 Discharge Temp",
+        "",
+        ""
+      ]
+    }
+  ]
+}
