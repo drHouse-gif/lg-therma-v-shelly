@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "profile_id": null,
+  "family": null,
+  "lg": {
+    "model": null,
+    "outdoor_model": null,
+    "controller": null,
+    "board_revision": null
+  },
+  "gateway": {
+    "required": null,
+    "model": null,
+    "firmware": null
+  },
+  "protocol": {
+    "name": null,
+    "map_revision": null,
+    "address_convention": null,
+    "unit_address": null,
+    "slave_id": null,
+    "baud": null,
+    "data_bits": null,
+    "parity": null,
+    "stop_bits": null
+  },
+  "shelly": {
+    "model": null,
+    "generation": null,
+    "firmware": null,
+    "addon": null,
+    "capacity_check": null
+  },
+  "compatibility_status": "unverified",
+  "validation_status": "generated_untested",
+  "points": [
+    {
+      "key": null,
+      "name": null,
+      "purpose": null,
+      "address": {
+        "source_notation": null,
+        "hex": null,
+        "decimal": null,
+        "convention": null,
+        "wire_offset": null
+      },
+      "register_type": null,
+      "function_codes": {
+        "read": null,
+        "write": null
+      },
+      "rights": {
+        "read": null,
+        "write": null
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [],
+      "sources": [],
+      "evidence_status": "unverified",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": []
+    }
+  ],
+  "sources": [],
+  "conflicts": [],
+  "unknowns": [],
+  "tests": []
+}
