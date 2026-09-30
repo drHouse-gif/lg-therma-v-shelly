@@ -1,0 +1,992 @@
+{
+  "schema_version": "1.0",
+  "profile_id": "workbook-awhp",
+  "family": "AWHP",
+  "lg": {
+    "model": null,
+    "outdoor_model": null,
+    "controller": null,
+    "board_revision": null
+  },
+  "gateway": {
+    "required": null,
+    "model": null,
+    "firmware": null
+  },
+  "protocol": {
+    "name": null,
+    "map_revision": null,
+    "address_convention": null,
+    "unit_address": null,
+    "slave_id": null,
+    "baud": null,
+    "data_bits": null,
+    "parity": null,
+    "stop_bits": null
+  },
+  "shelly": {
+    "model": null,
+    "generation": null,
+    "firmware": null,
+    "addon": null,
+    "capacity_check": null
+  },
+  "compatibility_status": "gateway_unidentified",
+  "validation_status": "generated_untested",
+  "points": [
+    {
+      "key": "awhp-row-8",
+      "name": "RUN/STOP",
+      "purpose": null,
+      "address": {
+        "source_notation": "C000",
+        "hex": "0xC000",
+        "decimal": 49152,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": [
+          5
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AWHP",
+          "range": "A8:F8"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1/Off:0"
+    },
+    {
+      "key": "awhp-row-9",
+      "name": "LOCK",
+      "purpose": null,
+      "address": {
+        "source_notation": "C001",
+        "hex": "0xC001",
+        "decimal": 49153,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": [
+          5
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AWHP",
+          "range": "A9:F9"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1/Off:0"
+    },
+    {
+      "key": "awhp-row-10",
+      "name": "AIR/WATER FLAG",
+      "purpose": null,
+      "address": {
+        "source_notation": "C002",
+        "hex": "0xC002",
+        "decimal": 49154,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AWHP",
+          "range": "A10:F10"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "WATER:1/AIR:0"
+    },
+    {
+      "key": "awhp-row-11",
+      "name": "HotWaterOnly",
+      "purpose": null,
+      "address": {
+        "source_notation": "C003",
+        "hex": "0xC003",
+        "decimal": 49155,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AWHP",
+          "range": "A11:F11"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "Only:1/Normal:0"
+    },
+    {
+      "key": "awhp-row-12",
+      "name": "ALARM",
+      "purpose": null,
+      "address": {
+        "source_notation": "C004",
+        "hex": "0xC004",
+        "decimal": 49156,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AWHP",
+          "range": "A12:F12"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "Error:1/Normal:0"
+    },
+    {
+      "key": "awhp-row-13",
+      "name": "HOT_WATER",
+      "purpose": null,
+      "address": {
+        "source_notation": "C005",
+        "hex": "0xC005",
+        "decimal": 49157,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": [
+          5
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AWHP",
+          "range": "A13:F13"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1/Off:0"
+    },
+    {
+      "key": "awhp-row-14",
+      "name": "MODE",
+      "purpose": null,
+      "address": {
+        "source_notation": "C000",
+        "hex": "0xC000",
+        "decimal": 49152,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AWHP",
+          "range": "A14:F14"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "Cool:1 Heat:2 Auto:3"
+    },
+    {
+      "key": "awhp-row-15",
+      "name": "SetRoomTemp",
+      "purpose": null,
+      "address": {
+        "source_notation": "C001",
+        "hex": "0xC001",
+        "decimal": 49153,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AWHP",
+          "range": "A15:F15"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "16 ~ 30"
+    },
+    {
+      "key": "awhp-row-16",
+      "name": "SetHotWaterTemp",
+      "purpose": null,
+      "address": {
+        "source_notation": "C002",
+        "hex": "0xC002",
+        "decimal": 49154,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AWHP",
+          "range": "A16:F16"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "30 ~ 80"
+    },
+    {
+      "key": "awhp-row-17",
+      "name": "SetPipeOutWaterTemp",
+      "purpose": null,
+      "address": {
+        "source_notation": "C003",
+        "hex": "0xC003",
+        "decimal": 49155,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AWHP",
+          "range": "A17:F17"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "6 ~ 80"
+    },
+    {
+      "key": "awhp-row-18",
+      "name": "RoomTemp",
+      "purpose": null,
+      "address": {
+        "source_notation": "C004",
+        "hex": "0xC004",
+        "decimal": 49156,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AWHP",
+          "range": "A18:F18"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "awhp-row-19",
+      "name": "ERROR",
+      "purpose": null,
+      "address": {
+        "source_notation": "C005",
+        "hex": "0xC005",
+        "decimal": 49157,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AWHP",
+          "range": "A19:F19"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "0 ~ 242"
+    },
+    {
+      "key": "awhp-row-20",
+      "name": "PipeInTemp",
+      "purpose": null,
+      "address": {
+        "source_notation": "C006",
+        "hex": "0xC006",
+        "decimal": 49158,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AWHP",
+          "range": "A20:F20"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "-"
+    },
+    {
+      "key": "awhp-row-21",
+      "name": "TankTemp",
+      "purpose": null,
+      "address": {
+        "source_notation": "C007",
+        "hex": "0xC007",
+        "decimal": 49159,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AWHP",
+          "range": "A21:F21"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "awhp-row-22",
+      "name": "SolarTemp",
+      "purpose": null,
+      "address": {
+        "source_notation": "C008",
+        "hex": "0xC008",
+        "decimal": 49160,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AWHP",
+          "range": "A22:F22"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "awhp-row-23",
+      "name": "PipeOutTemp",
+      "purpose": null,
+      "address": {
+        "source_notation": "C009",
+        "hex": "0xC009",
+        "decimal": 49161,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AWHP",
+          "range": "A23:F23"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    }
+  ],
+  "sources": [
+    "uploaded-xls"
+  ],
+  "conflicts": [],
+  "unknowns": [
+    "Gateway and document revision",
+    "Exact supported models",
+    "Address formula and convention",
+    "Transport and serial settings",
+    "Encoding and missing scales"
+  ],
+  "tests": []
+}
