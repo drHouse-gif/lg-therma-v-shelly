@@ -1,0 +1,40 @@
+{
+  "interface": {
+    "displayName": "LG HVAC for Shelly",
+    "shortDescription": "LG HVAC integration planning",
+    "longDescription": "Community assistant for installers, engineers and owners. Prepares documented hardware, wiring, settings, Shelly scripts and Smart Control presentation. Covers LG HVAC families as a development scope, not a universal compatibility claim. The current release includes a documented direct-Modbus HN1616HC.NK0 example and model-specific evidence workflow. No device connection, cloud credentials or always-on server are provided by this plugin. This is an independent community project published by Georgi Germanov as an individual and does not claim official affiliation with LG or Shelly. Responds in the user\u2019s language.",
+    "developerName": "\u0413\u0435\u043e\u0440\u0433\u0438 \u0413\u0435\u0440\u043c\u0430\u043d\u043e\u0432",
+    "category": "Productivity",
+    "defaultPrompt": [
+      "\u041f\u043e\u0434\u0433\u043e\u0442\u0432\u0438 \u0438\u043d\u0442\u0435\u0433\u0440\u0430\u0446\u0438\u044f \u043c\u0435\u0436\u0434\u0443 \u043c\u043e\u044f LG HVAC \u043c\u043e\u0434\u0435\u043b \u0438 Shelly.",
+      "\u041f\u0440\u043e\u0432\u0435\u0440\u0438 \u0434\u0438\u0440\u0435\u043a\u0442\u043d\u0438\u044f Modbus \u0438\u043d\u0442\u0435\u0440\u0444\u0435\u0439\u0441 \u043d\u0430 LG HN1616HC.NK0.",
+      "\u041f\u0440\u043e\u0432\u0435\u0440\u0438 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u043e\u0432\u0430 \u043a\u0430\u0440\u0442\u0430 \u0438 \u0441\u044a\u0432\u043c\u0435\u0441\u0442\u0438\u043c\u043e\u0441\u0442\u0442\u0430 \u045d \u0441 \u043c\u043e\u044f\u0442\u0430 \u043c\u0430\u0448\u0438\u043d\u0430."
+    ],
+    "websiteURL": "https://github.com/drHouse-gif/lg-therma-v-shelly",
+    "supportURL": "https://github.com/drHouse-gif/lg-therma-v-shelly/blob/main/SUPPORT.md",
+    "privacyPolicyURL": "https://github.com/drHouse-gif/lg-therma-v-shelly/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/drHouse-gif/lg-therma-v-shelly/blob/main/TERMS.md",
+    "logo": "assets/icon.png",
+    "composerIcon": "assets/icon.png",
+    "capabilities": []
+  },
+  "extensions": {
+    "com.openai": {
+      "review": {
+        "commerce": false
+      },
+      "publication": {
+        "countries": [],
+        "release_notes": "Added verified public GitHub listing URLs and a neutral project icon. Publisher remains Georgi Germanov as an individual; no company or employer affiliation is claimed. No commerce; worldwide availability."
+      }
+    }
+  },
+  "name": "lg-hvac-for-shelly",
+  "version": "0.1.4",
+  "description": "Prepare evidence-backed local LG HVAC integrations with Shelly and Shelly Smart Control. Model-specific support must be verified.",
+  "author": {
+    "name": "\u0413\u0435\u043e\u0440\u0433\u0438 \u0413\u0435\u0440\u043c\u0430\u043d\u043e\u0432"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}
