@@ -1,0 +1,259 @@
+{
+  "sheet": "AWHP",
+  "extraction": "xlrd cached cell values, not recalculated formulas",
+  "rows": [
+    {
+      "row": 1,
+      "cells": [
+        "Input Address as Hexadecimal number",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 2,
+      "cells": [
+        "Address",
+        0.0,
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 3,
+      "cells": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 4,
+      "cells": [
+        "※ AWHP",
+        12.0,
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 5,
+      "cells": [
+        "Point",
+        "Modbus \nAddress\n(decimal)",
+        "Modbus \nAddress\n(hexadecimal)",
+        "Function\nCode",
+        "Object Name\n(XXX : Unit Address Number)",
+        "Value & Meaning"
+      ]
+    },
+    {
+      "row": 6,
+      "cells": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 7,
+      "cells": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 8,
+      "cells": [
+        1.0,
+        49152.0,
+        "C000",
+        "01/05",
+        "RUN/STOP",
+        "On:1/Off:0"
+      ]
+    },
+    {
+      "row": 9,
+      "cells": [
+        2.0,
+        49153.0,
+        "C001",
+        "01/05",
+        "LOCK",
+        "On:1/Off:0"
+      ]
+    },
+    {
+      "row": 10,
+      "cells": [
+        3.0,
+        49154.0,
+        "C002",
+        "01",
+        "AIR/WATER FLAG",
+        "WATER:1/AIR:0"
+      ]
+    },
+    {
+      "row": 11,
+      "cells": [
+        4.0,
+        49155.0,
+        "C003",
+        "01",
+        "HotWaterOnly",
+        "Only:1/Normal:0"
+      ]
+    },
+    {
+      "row": 12,
+      "cells": [
+        5.0,
+        49156.0,
+        "C004",
+        "01",
+        "ALARM",
+        "Error:1/Normal:0"
+      ]
+    },
+    {
+      "row": 13,
+      "cells": [
+        6.0,
+        49157.0,
+        "C005",
+        "01/05",
+        "HOT_WATER",
+        "On:1/Off:0"
+      ]
+    },
+    {
+      "row": 14,
+      "cells": [
+        1.0,
+        49152.0,
+        "C000",
+        "03/06",
+        "MODE",
+        "Cool:1 Heat:2 Auto:3"
+      ]
+    },
+    {
+      "row": 15,
+      "cells": [
+        2.0,
+        49153.0,
+        "C001",
+        "03/06",
+        "SetRoomTemp",
+        "16 ~ 30"
+      ]
+    },
+    {
+      "row": 16,
+      "cells": [
+        3.0,
+        49154.0,
+        "C002",
+        "03/06",
+        "SetHotWaterTemp",
+        "30 ~ 80"
+      ]
+    },
+    {
+      "row": 17,
+      "cells": [
+        4.0,
+        49155.0,
+        "C003",
+        "03/06",
+        "SetPipeOutWaterTemp",
+        "6 ~ 80"
+      ]
+    },
+    {
+      "row": 18,
+      "cells": [
+        5.0,
+        49156.0,
+        "C004",
+        "03",
+        "RoomTemp",
+        ""
+      ]
+    },
+    {
+      "row": 19,
+      "cells": [
+        6.0,
+        49157.0,
+        "C005",
+        "03",
+        "ERROR",
+        "0 ~ 242"
+      ]
+    },
+    {
+      "row": 20,
+      "cells": [
+        7.0,
+        49158.0,
+        "C006",
+        "03",
+        "PipeInTemp",
+        "-"
+      ]
+    },
+    {
+      "row": 21,
+      "cells": [
+        8.0,
+        49159.0,
+        "C007",
+        "03",
+        "TankTemp",
+        ""
+      ]
+    },
+    {
+      "row": 22,
+      "cells": [
+        9.0,
+        49160.0,
+        "C008",
+        "03",
+        "SolarTemp",
+        ""
+      ]
+    },
+    {
+      "row": 23,
+      "cells": [
+        10.0,
+        49161.0,
+        "C009",
+        "03",
+        "PipeOutTemp",
+        ""
+      ]
+    }
+  ]
+}
