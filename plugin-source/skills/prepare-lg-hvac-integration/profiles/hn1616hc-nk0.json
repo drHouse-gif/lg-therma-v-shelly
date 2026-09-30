@@ -1,0 +1,653 @@
+{
+  "schema_version": "1.0",
+  "profile_id": "lg-hn1616hc-nk0-direct-modbus",
+  "family": "Therma V",
+  "lg": {
+    "model": "HN1616HC.NK0",
+    "outdoor_model": null,
+    "controller": null,
+    "board_revision": null
+  },
+  "gateway": {
+    "required": false,
+    "model": null,
+    "firmware": null,
+    "evidence": "LG p.98 documents direct third-party controller"
+  },
+  "protocol": {
+    "name": "Modbus RTU",
+    "map_revision": "MFL68681839 Rev.08_022726",
+    "address_convention": "LG displayed reference numbers; wire mapping to verify",
+    "unit_address": null,
+    "slave_id": null,
+    "baud": 9600,
+    "data_bits": null,
+    "parity": "none",
+    "stop_bits": 1
+  },
+  "shelly": {
+    "model": "Pro EM-50 (candidate)",
+    "generation": null,
+    "firmware": null,
+    "addon": "Pro Modbus RS485 Add-on (candidate)",
+    "capacity_check": null
+  },
+  "compatibility_status": "direct_interface_documented_configuration_pending",
+  "validation_status": "statically_checked",
+  "points": [
+    {
+      "key": "coil-1",
+      "name": "Enable heating/cooling",
+      "purpose": "Enable heating/cooling",
+      "address": {
+        "source_notation": "00001",
+        "hex": "0x0",
+        "decimal": 0,
+        "convention": "derived candidate zero-based offset from LG displayed reference; not authorized for deployment",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": null,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": null
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": {
+          "0": "off",
+          "1": "on"
+        }
+      },
+      "restrictions": [
+        "Not commissioned; do not deploy from this candidate record"
+      ],
+      "sources": [
+        {
+          "id": "lg-mfl68681839-r08",
+          "page": 183
+        }
+      ],
+      "evidence_status": "documented_point_with_unresolved_protocol_details",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Confirm exact firmware applicability, encoding and allowed FC before code"
+      ],
+      "standard_read_fc_candidate": 1
+    },
+    {
+      "key": "coil-2",
+      "name": "DHW enable",
+      "purpose": "DHW enable",
+      "address": {
+        "source_notation": "00002",
+        "hex": "0x1",
+        "decimal": 1,
+        "convention": "derived candidate zero-based offset from LG displayed reference; not authorized for deployment",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": null,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": null
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": {
+          "0": "off",
+          "1": "on"
+        }
+      },
+      "restrictions": [
+        "Not commissioned; do not deploy from this candidate record"
+      ],
+      "sources": [
+        {
+          "id": "lg-mfl68681839-r08",
+          "page": 183
+        }
+      ],
+      "evidence_status": "documented_point_with_unresolved_protocol_details",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Confirm exact firmware applicability, encoding and allowed FC before code"
+      ],
+      "standard_read_fc_candidate": 1
+    },
+    {
+      "key": "coil-3",
+      "name": "Silent mode",
+      "purpose": "Silent mode",
+      "address": {
+        "source_notation": "00003",
+        "hex": "0x2",
+        "decimal": 2,
+        "convention": "derived candidate zero-based offset from LG displayed reference; not authorized for deployment",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": null,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": null
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": {
+          "0": "off",
+          "1": "on"
+        }
+      },
+      "restrictions": [
+        "Not commissioned; do not deploy from this candidate record"
+      ],
+      "sources": [
+        {
+          "id": "lg-mfl68681839-r08",
+          "page": 183
+        }
+      ],
+      "evidence_status": "documented_point_with_unresolved_protocol_details",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Confirm exact firmware applicability, encoding and allowed FC before code"
+      ],
+      "standard_read_fc_candidate": 1
+    },
+    {
+      "key": "input_register-30001",
+      "name": "Error code",
+      "purpose": "Error code",
+      "address": {
+        "source_notation": "30001",
+        "hex": "0x0",
+        "decimal": 0,
+        "convention": "derived candidate zero-based offset from LG displayed reference; not authorized for deployment",
+        "wire_offset": null
+      },
+      "register_type": "input_register",
+      "function_codes": {
+        "read": null,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "Not commissioned; do not deploy from this candidate record"
+      ],
+      "sources": [
+        {
+          "id": "lg-mfl68681839-r08",
+          "page": 185
+        }
+      ],
+      "evidence_status": "documented_point_with_unresolved_protocol_details",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Confirm exact firmware applicability, encoding and allowed FC before code"
+      ],
+      "standard_read_fc_candidate": 4
+    },
+    {
+      "key": "input_register-30003",
+      "name": "Water inlet temperature",
+      "purpose": "Water inlet temperature",
+      "address": {
+        "source_notation": "30003",
+        "hex": "0x2",
+        "decimal": 2,
+        "convention": "derived candidate zero-based offset from LG displayed reference; not authorized for deployment",
+        "wire_offset": null
+      },
+      "register_type": "input_register",
+      "function_codes": {
+        "read": null,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": 0.1,
+        "offset": null,
+        "unit": "degC",
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "Not commissioned; do not deploy from this candidate record"
+      ],
+      "sources": [
+        {
+          "id": "lg-mfl68681839-r08",
+          "page": 185
+        }
+      ],
+      "evidence_status": "documented_point_with_unresolved_protocol_details",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Confirm exact firmware applicability, encoding and allowed FC before code"
+      ],
+      "standard_read_fc_candidate": 4
+    },
+    {
+      "key": "input_register-30004",
+      "name": "Water outlet temperature",
+      "purpose": "Water outlet temperature",
+      "address": {
+        "source_notation": "30004",
+        "hex": "0x3",
+        "decimal": 3,
+        "convention": "derived candidate zero-based offset from LG displayed reference; not authorized for deployment",
+        "wire_offset": null
+      },
+      "register_type": "input_register",
+      "function_codes": {
+        "read": null,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": 0.1,
+        "offset": null,
+        "unit": "degC",
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "Not commissioned; do not deploy from this candidate record"
+      ],
+      "sources": [
+        {
+          "id": "lg-mfl68681839-r08",
+          "page": 185
+        }
+      ],
+      "evidence_status": "documented_point_with_unresolved_protocol_details",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Confirm exact firmware applicability, encoding and allowed FC before code"
+      ],
+      "standard_read_fc_candidate": 4
+    },
+    {
+      "key": "input_register-30006",
+      "name": "DHW temperature",
+      "purpose": "DHW temperature",
+      "address": {
+        "source_notation": "30006",
+        "hex": "0x5",
+        "decimal": 5,
+        "convention": "derived candidate zero-based offset from LG displayed reference; not authorized for deployment",
+        "wire_offset": null
+      },
+      "register_type": "input_register",
+      "function_codes": {
+        "read": null,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": 0.1,
+        "offset": null,
+        "unit": "degC",
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "Not commissioned; do not deploy from this candidate record"
+      ],
+      "sources": [
+        {
+          "id": "lg-mfl68681839-r08",
+          "page": 185
+        }
+      ],
+      "evidence_status": "documented_point_with_unresolved_protocol_details",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Confirm exact firmware applicability, encoding and allowed FC before code"
+      ],
+      "standard_read_fc_candidate": 4
+    },
+    {
+      "key": "holding_register-40001",
+      "name": "Operation mode",
+      "purpose": "Operation mode",
+      "address": {
+        "source_notation": "40001",
+        "hex": "0x0",
+        "decimal": 0,
+        "convention": "derived candidate zero-based offset from LG displayed reference; not authorized for deployment",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": null,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": null
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": {
+          "0": "cooling",
+          "4": "heating",
+          "3": "auto"
+        }
+      },
+      "restrictions": [
+        "Not commissioned; do not deploy from this candidate record"
+      ],
+      "sources": [
+        {
+          "id": "lg-mfl68681839-r08",
+          "page": 186
+        }
+      ],
+      "evidence_status": "documented_point_with_unresolved_protocol_details",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Confirm exact firmware applicability, encoding and allowed FC before code"
+      ],
+      "standard_read_fc_candidate": 3
+    },
+    {
+      "key": "holding_register-40003",
+      "name": "Circuit 1 target",
+      "purpose": "Circuit 1 target",
+      "address": {
+        "source_notation": "40003",
+        "hex": "0x2",
+        "decimal": 2,
+        "convention": "derived candidate zero-based offset from LG displayed reference; not authorized for deployment",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": null,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": null
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": 0.1,
+        "offset": null,
+        "unit": "degC",
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "Not commissioned; do not deploy from this candidate record"
+      ],
+      "sources": [
+        {
+          "id": "lg-mfl68681839-r08",
+          "page": 186
+        }
+      ],
+      "evidence_status": "documented_point_with_unresolved_protocol_details",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Confirm exact firmware applicability, encoding and allowed FC before code"
+      ],
+      "standard_read_fc_candidate": 3
+    },
+    {
+      "key": "holding_register-40009",
+      "name": "DHW target",
+      "purpose": "DHW target",
+      "address": {
+        "source_notation": "40009",
+        "hex": "0x8",
+        "decimal": 8,
+        "convention": "derived candidate zero-based offset from LG displayed reference; not authorized for deployment",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": null,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": null
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": 0.1,
+        "offset": null,
+        "unit": "degC",
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "Not commissioned; do not deploy from this candidate record"
+      ],
+      "sources": [
+        {
+          "id": "lg-mfl68681839-r08",
+          "page": 186
+        }
+      ],
+      "evidence_status": "documented_point_with_unresolved_protocol_details",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Confirm exact firmware applicability, encoding and allowed FC before code"
+      ],
+      "standard_read_fc_candidate": 3
+    }
+  ],
+  "sources": [
+    {
+      "id": "lg-mfl68681839-r08",
+      "url": "https://gscs-b2c.lge.com/downloadFile?fileId=SwBHlGV3pEWTB0a0w6RJg",
+      "revision": "Rev.08_022726",
+      "model_scope": "Cover includes HN1616HC NK0",
+      "pages": [
+        98,
+        155,
+        183,
+        184,
+        185,
+        186
+      ]
+    }
+  ],
+  "conflicts": [
+    "Input/Holding function-code headings reversed on pp.185/186 relative to standard",
+    "SW1 detail differs between p.155 and p.183",
+    "LG menu allows 01–FF HEX; Shelly client sid range retrieved is 1–247"
+  ],
+  "unknowns": [
+    "Outdoor model and installed board/controller revision",
+    "Exact Shelly firmware/add-on and current capabilities",
+    "Current slave ID and data bits",
+    "Available port and existing LG metering module",
+    "Read/write FC confirmation and allowed ranges",
+    "Signedness for exact firmware",
+    "Requested functions and cloud capability/resource verification"
+  ],
+  "tests": []
+}
