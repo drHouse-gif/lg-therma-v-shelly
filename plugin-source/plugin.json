@@ -1,0 +1,40 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "lg-hvac-for-shelly",
+  "version": "0.1.4",
+  "description": "Prepare evidence-backed local LG HVAC integrations with Shelly and Shelly Smart Control. Model-specific support must be verified.",
+  "author": {
+    "name": "Георги Германов"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "LG HVAC for Shelly",
+        "shortDescription": "LG HVAC integration planning",
+        "longDescription": "Community assistant for installers, engineers and owners. Prepares documented hardware, wiring, settings, Shelly scripts and Smart Control presentation. Covers LG HVAC families as a development scope, not a universal compatibility claim. The current release includes a documented direct-Modbus HN1616HC.NK0 example and model-specific evidence workflow. No device connection, cloud credentials or always-on server are provided by this plugin. This is an independent community project published by Georgi Germanov as an individual and does not claim official affiliation with LG or Shelly. Responds in the user’s language.",
+        "developerName": "Георги Германов",
+        "category": "Productivity",
+        "defaultPrompt": [
+          "Подготви интеграция между моя LG HVAC модел и Shelly.",
+          "Провери директния Modbus интерфейс на LG HN1616HC.NK0.",
+          "Провери регистрова карта и съвместимостта ѝ с моята машина."
+        ],
+        "websiteURL": "https://github.com/drHouse-gif/lg-therma-v-shelly",
+        "supportURL": "https://github.com/drHouse-gif/lg-therma-v-shelly/blob/main/SUPPORT.md",
+        "privacyPolicyURL": "https://github.com/drHouse-gif/lg-therma-v-shelly/blob/main/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/drHouse-gif/lg-therma-v-shelly/blob/main/TERMS.md",
+        "logo": "assets/icon.svg",
+        "composerIcon": "assets/icon.svg"
+      },
+      "review": {
+        "commerce": false
+      },
+      "publication": {
+        "countries": [],
+        "release_notes": "Added verified public GitHub listing URLs and a neutral project icon. Publisher remains Georgi Germanov as an individual; no company or employer affiliation is claimed. No commerce; worldwide availability."
+      },
+      "publicSourceNote": "Public source copy excludes the privately supplied register workbook and workbook-derived profiles pending redistribution permission.",
+      "publicSource": true
+    }
+  }
+}
