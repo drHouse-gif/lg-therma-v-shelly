@@ -1,0 +1,44 @@
+{
+  "scope": "LG HVAC families as a development scope; public source currently includes one documented Therma V example",
+  "families": [
+    {
+      "family": "Air conditioners",
+      "status": "discovery_only",
+      "supported_models": []
+    },
+    {
+      "family": "Multi Split",
+      "status": "discovery_only",
+      "supported_models": []
+    },
+    {
+      "family": "Multi V / VRF",
+      "status": "discovery_only",
+      "supported_models": []
+    },
+    {
+      "family": "Therma V",
+      "status": "documented_example",
+      "supported_models": [
+        "HN1616HC.NK0: direct Modbus interface documented; real-machine integration not claimed by this plugin profile"
+      ]
+    },
+    {
+      "family": "Ventilation",
+      "status": "discovery_only",
+      "supported_models": []
+    },
+    {
+      "family": "AHU",
+      "status": "discovery_only",
+      "supported_models": []
+    },
+    {
+      "family": "Chillers",
+      "status": "discovery_only",
+      "supported_models": []
+    }
+  ],
+  "example": "hn1616hc-nk0.json",
+  "rule": "Choose the exact model/controller/protocol path. Do not generalize one model's map to another."
+}
