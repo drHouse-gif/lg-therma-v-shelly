@@ -1,0 +1,2114 @@
+{
+  "schema_version": "1.0",
+  "profile_id": "workbook-ahu",
+  "family": "AHU",
+  "lg": {
+    "model": null,
+    "outdoor_model": null,
+    "controller": null,
+    "board_revision": null
+  },
+  "gateway": {
+    "required": null,
+    "model": null,
+    "firmware": null
+  },
+  "protocol": {
+    "name": null,
+    "map_revision": null,
+    "address_convention": null,
+    "unit_address": null,
+    "slave_id": null,
+    "baud": null,
+    "data_bits": null,
+    "parity": null,
+    "stop_bits": null
+  },
+  "shelly": {
+    "model": null,
+    "generation": null,
+    "firmware": null,
+    "addon": null,
+    "capacity_check": null
+  },
+  "compatibility_status": "gateway_unidentified",
+  "validation_status": "generated_untested",
+  "points": [
+    {
+      "key": "ahu-row-8",
+      "name": "RUN/STOP",
+      "purpose": null,
+      "address": {
+        "source_notation": "8000",
+        "hex": "0x8000",
+        "decimal": 32768,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": [
+          5
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A8:F8"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1/Off:0"
+    },
+    {
+      "key": "ahu-row-9",
+      "name": "LOCK",
+      "purpose": null,
+      "address": {
+        "source_notation": "8001",
+        "hex": "0x8001",
+        "decimal": 32769,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": [
+          5
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A9:F9"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1/Off:0"
+    },
+    {
+      "key": "ahu-row-10",
+      "name": "FILTER",
+      "purpose": null,
+      "address": {
+        "source_notation": "8002",
+        "hex": "0x8002",
+        "decimal": 32770,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A10:F10"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1/Off:0"
+    },
+    {
+      "key": "ahu-row-11",
+      "name": "SMOKE",
+      "purpose": null,
+      "address": {
+        "source_notation": "8003",
+        "hex": "0x8003",
+        "decimal": 32771,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": [
+          5
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A11:F11"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "Smoke:1 Normal:0"
+    },
+    {
+      "key": "ahu-row-12",
+      "name": "HUMIDITY",
+      "purpose": null,
+      "address": {
+        "source_notation": "8004",
+        "hex": "0x8004",
+        "decimal": 32772,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": [
+          5
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A12:F12"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1/Off:0"
+    },
+    {
+      "key": "ahu-row-13",
+      "name": "AUTO_VENT",
+      "purpose": null,
+      "address": {
+        "source_notation": "8005",
+        "hex": "0x8005",
+        "decimal": 32773,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": [
+          5
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A13:F13"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1/Off:0"
+    },
+    {
+      "key": "ahu-row-14",
+      "name": "HUMIDIFIER",
+      "purpose": null,
+      "address": {
+        "source_notation": "8006",
+        "hex": "0x8006",
+        "decimal": 32774,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A14:F14"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1/Off:0"
+    },
+    {
+      "key": "ahu-row-15",
+      "name": "HEATER",
+      "purpose": null,
+      "address": {
+        "source_notation": "8007",
+        "hex": "0x8007",
+        "decimal": 32775,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A15:F15"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1/Off:0"
+    },
+    {
+      "key": "ahu-row-16",
+      "name": "VENT_FAN",
+      "purpose": null,
+      "address": {
+        "source_notation": "8008",
+        "hex": "0x8008",
+        "decimal": 32776,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A16:F16"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1/Off:0"
+    },
+    {
+      "key": "ahu-row-17",
+      "name": "SUPPLY_FAN",
+      "purpose": null,
+      "address": {
+        "source_notation": "8009",
+        "hex": "0x8009",
+        "decimal": 32777,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A17:F17"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1/Off:0"
+    },
+    {
+      "key": "ahu-row-18",
+      "name": "ALARM",
+      "purpose": null,
+      "address": {
+        "source_notation": "800A",
+        "hex": "0x800A",
+        "decimal": 32778,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A18:F18"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "Error:1/Normal:0"
+    },
+    {
+      "key": "ahu-row-19",
+      "name": "MODE",
+      "purpose": null,
+      "address": {
+        "source_notation": "8000",
+        "hex": "0x8000",
+        "decimal": 32768,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A19:F19"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "Cool:1 Dry:2 Fan:3 Saving:4 Heat:5 "
+    },
+    {
+      "key": "ahu-row-20",
+      "name": "SETTEMP",
+      "purpose": null,
+      "address": {
+        "source_notation": "8001",
+        "hex": "0x8001",
+        "decimal": 32769,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A20:F20"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "16 ~ 30"
+    },
+    {
+      "key": "ahu-row-21",
+      "name": "SUPPLY_TEMP",
+      "purpose": null,
+      "address": {
+        "source_notation": "8002",
+        "hex": "0x8002",
+        "decimal": 32770,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A21:F21"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "-127 ~ 127"
+    },
+    {
+      "key": "ahu-row-22",
+      "name": "OUTDOOR_TEMP",
+      "purpose": null,
+      "address": {
+        "source_notation": "8003",
+        "hex": "0x8003",
+        "decimal": 32771,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A22:F22"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "-127 ~ 127"
+    },
+    {
+      "key": "ahu-row-23",
+      "name": "VENT_TEMP",
+      "purpose": null,
+      "address": {
+        "source_notation": "8004",
+        "hex": "0x8004",
+        "decimal": 32772,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A23:F23"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "-127 ~ 127"
+    },
+    {
+      "key": "ahu-row-24",
+      "name": "MIXING_TEMP",
+      "purpose": null,
+      "address": {
+        "source_notation": "8005",
+        "hex": "0x8005",
+        "decimal": 32773,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A24:F24"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "-127 ~ 127"
+    },
+    {
+      "key": "ahu-row-25",
+      "name": "SETHUMIDITY",
+      "purpose": null,
+      "address": {
+        "source_notation": "8006",
+        "hex": "0x8006",
+        "decimal": 32774,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A25:F25"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "40 ~ 60"
+    },
+    {
+      "key": "ahu-row-26",
+      "name": "SUPPLY_HUMIDITY",
+      "purpose": null,
+      "address": {
+        "source_notation": "8007",
+        "hex": "0x8007",
+        "decimal": 32775,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A26:F26"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "30 ~ 90"
+    },
+    {
+      "key": "ahu-row-27",
+      "name": "OUTDOOR_HUMIDITY",
+      "purpose": null,
+      "address": {
+        "source_notation": "8008",
+        "hex": "0x8008",
+        "decimal": 32776,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A27:F27"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "30 ~ 90"
+    },
+    {
+      "key": "ahu-row-28",
+      "name": "VENT_HUMIDITY",
+      "purpose": null,
+      "address": {
+        "source_notation": "8009",
+        "hex": "0x8009",
+        "decimal": 32777,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A28:F28"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "30 ~ 90"
+    },
+    {
+      "key": "ahu-row-29",
+      "name": "CO2VALUE",
+      "purpose": null,
+      "address": {
+        "source_notation": "800A",
+        "hex": "0x800A",
+        "decimal": 32778,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A29:F29"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "0 ~ 255"
+    },
+    {
+      "key": "ahu-row-30",
+      "name": "ERROR",
+      "purpose": null,
+      "address": {
+        "source_notation": "800B",
+        "hex": "0x800B",
+        "decimal": 32779,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A30:F30"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "0 ~ 242"
+    },
+    {
+      "key": "ahu-row-31",
+      "name": "CURR_OA_DAMPER",
+      "purpose": null,
+      "address": {
+        "source_notation": "8010",
+        "hex": "0x8010",
+        "decimal": 32784,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A31:F31"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "0 ~ 90"
+    },
+    {
+      "key": "ahu-row-32",
+      "name": "CURR_EA_DAMPER",
+      "purpose": null,
+      "address": {
+        "source_notation": "8011",
+        "hex": "0x8011",
+        "decimal": 32785,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A32:F32"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "0 ~ 90"
+    },
+    {
+      "key": "ahu-row-33",
+      "name": "CURR_MIX_DAMPER",
+      "purpose": null,
+      "address": {
+        "source_notation": "8012",
+        "hex": "0x8012",
+        "decimal": 32786,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A33:F33"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "0 ~ 90"
+    },
+    {
+      "key": "ahu-row-34",
+      "name": "COOL_OA_DAMPER",
+      "purpose": null,
+      "address": {
+        "source_notation": "8013",
+        "hex": "0x8013",
+        "decimal": 32787,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A34:F34"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "0 ~ 90"
+    },
+    {
+      "key": "ahu-row-35",
+      "name": "COOL_EA_DAMPER",
+      "purpose": null,
+      "address": {
+        "source_notation": "8014",
+        "hex": "0x8014",
+        "decimal": 32788,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A35:F35"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "0 ~ 90"
+    },
+    {
+      "key": "ahu-row-36",
+      "name": "COOL_MIX_DAMPER",
+      "purpose": null,
+      "address": {
+        "source_notation": "8015",
+        "hex": "0x8015",
+        "decimal": 32789,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A36:F36"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "0 ~ 90"
+    },
+    {
+      "key": "ahu-row-37",
+      "name": "HEAT_OA_DAMPER",
+      "purpose": null,
+      "address": {
+        "source_notation": "8016",
+        "hex": "0x8016",
+        "decimal": 32790,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A37:F37"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "0 ~ 90"
+    },
+    {
+      "key": "ahu-row-38",
+      "name": "HEAT_EA_DAMPER",
+      "purpose": null,
+      "address": {
+        "source_notation": "8017",
+        "hex": "0x8017",
+        "decimal": 32791,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A38:F38"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "0 ~ 90"
+    },
+    {
+      "key": "ahu-row-39",
+      "name": "HEAT_MIX_DAMPER",
+      "purpose": null,
+      "address": {
+        "source_notation": "8018",
+        "hex": "0x8018",
+        "decimal": 32792,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A39:F39"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "0 ~ 90"
+    },
+    {
+      "key": "ahu-row-40",
+      "name": "FAN_OA_DAMPER",
+      "purpose": null,
+      "address": {
+        "source_notation": "8019",
+        "hex": "0x8019",
+        "decimal": 32793,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A40:F40"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "0 ~ 90"
+    },
+    {
+      "key": "ahu-row-41",
+      "name": "FAN_EA_DAMPER",
+      "purpose": null,
+      "address": {
+        "source_notation": "801A",
+        "hex": "0x801A",
+        "decimal": 32794,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A41:F41"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "0 ~ 90"
+    },
+    {
+      "key": "ahu-row-42",
+      "name": "FAN_MIX_DAMPER",
+      "purpose": null,
+      "address": {
+        "source_notation": "801B",
+        "hex": "0x801B",
+        "decimal": 32795,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "AHU",
+          "range": "A42:F42"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "0 ~ 90"
+    }
+  ],
+  "sources": [
+    "uploaded-xls"
+  ],
+  "conflicts": [],
+  "unknowns": [
+    "Gateway and document revision",
+    "Exact supported models",
+    "Address formula and convention",
+    "Transport and serial settings",
+    "Encoding and missing scales"
+  ],
+  "tests": []
+}
