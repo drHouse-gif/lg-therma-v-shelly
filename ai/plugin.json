@@ -20,9 +20,9 @@
           "Провери регистрова карта и съвместимостта ѝ с моята машина."
         ],
         "websiteURL": "https://github.com/drHouse-gif/lg-therma-v-shelly",
-        "supportURL": "https://github.com/drHouse-gif/lg-therma-v-shelly/blob/main/SUPPORT.md",
-        "privacyPolicyURL": "https://github.com/drHouse-gif/lg-therma-v-shelly/blob/main/PRIVACY.md",
-        "termsOfServiceURL": "https://github.com/drHouse-gif/lg-therma-v-shelly/blob/main/TERMS.md",
+        "supportURL": "https://github.com/drHouse-gif/lg-therma-v-shelly/blob/main/ai/legal/SUPPORT.md",
+        "privacyPolicyURL": "https://github.com/drHouse-gif/lg-therma-v-shelly/blob/main/ai/legal/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/drHouse-gif/lg-therma-v-shelly/blob/main/ai/legal/TERMS.md",
         "logo": "assets/icon.png",
         "composerIcon": "assets/icon.png"
       },
