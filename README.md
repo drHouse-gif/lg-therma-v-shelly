@@ -4,6 +4,21 @@ Local **RS-485 / Modbus RTU** integration for compatible **LG THERMA V** heat pu
 
 > Community project. Not an official LG or Shelly Group integration. Verify the exact LG service documentation before enabling writes.
 
+
+## ChatGPT plugin source — LG HVAC for Shelly
+
+This repository also publishes the **public source** for the skills-only ChatGPT project **LG HVAC for Shelly**, maintained by **Георги Германов** as an individual publisher.
+
+- Source: [`plugin-source/`](./plugin-source/)
+- Plugin manifest: [`plugin-source/plugin.json`](./plugin-source/plugin.json)
+- Support: [`SUPPORT.md`](./SUPPORT.md)
+- Privacy Policy: [`PRIVACY.md`](./PRIVACY.md)
+- Terms of Service: [`TERMS.md`](./TERMS.md)
+
+The public plugin source is broader in intent than this tested THERMA V example, but it does **not** claim universal LG HVAC compatibility. Model support is evidence-gated. Privately supplied workbook material and workbook-derived profiles are intentionally not redistributed until redistribution rights are confirmed.
+
+The GitHub publication is a source/community release. It does not mean the plugin is listed in the public ChatGPT Plugin Directory.
+
 ## Use this project for
 
 - LG THERMA V + Shelly Smart Control
