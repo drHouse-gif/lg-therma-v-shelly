@@ -1,0 +1,2370 @@
+{
+  "schema_version": "1.0",
+  "profile_id": "workbook-odu",
+  "family": "ODU",
+  "lg": {
+    "model": null,
+    "outdoor_model": null,
+    "controller": null,
+    "board_revision": null
+  },
+  "gateway": {
+    "required": null,
+    "model": null,
+    "firmware": null
+  },
+  "protocol": {
+    "name": null,
+    "map_revision": null,
+    "address_convention": null,
+    "unit_address": null,
+    "slave_id": null,
+    "baud": null,
+    "data_bits": null,
+    "parity": null,
+    "stop_bits": null
+  },
+  "shelly": {
+    "model": null,
+    "generation": null,
+    "firmware": null,
+    "addon": null,
+    "capacity_check": null
+  },
+  "compatibility_status": "gateway_unidentified",
+  "validation_status": "generated_untested",
+  "points": [
+    {
+      "key": "odu-row-8",
+      "name": "Compressor Operation",
+      "purpose": null,
+      "address": {
+        "source_notation": "A000",
+        "hex": "0xA000",
+        "decimal": 40960,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A8:F8"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1 / Off:0"
+    },
+    {
+      "key": "odu-row-9",
+      "name": "Hot Gas Valve",
+      "purpose": null,
+      "address": {
+        "source_notation": "A001",
+        "hex": "0xA001",
+        "decimal": 40961,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A9:F9"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1 / Off:0 (MultiV 5는 항상 0)"
+    },
+    {
+      "key": "odu-row-10",
+      "name": "Inverter1 Heater",
+      "purpose": null,
+      "address": {
+        "source_notation": "A002",
+        "hex": "0xA002",
+        "decimal": 40962,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A10:F10"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1 / Off:0"
+    },
+    {
+      "key": "odu-row-11",
+      "name": "Inverter2 Heater",
+      "purpose": null,
+      "address": {
+        "source_notation": "A003",
+        "hex": "0xA003",
+        "decimal": 40963,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A11:F11"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1 / Off:0"
+    },
+    {
+      "key": "odu-row-12",
+      "name": "Inverter1 Oil Sensor",
+      "purpose": null,
+      "address": {
+        "source_notation": "A004",
+        "hex": "0xA004",
+        "decimal": 40964,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A12:F12"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "Detect Oil:1 / Not Detect Oil:0"
+    },
+    {
+      "key": "odu-row-13",
+      "name": "Inverter2 Oil Sensor",
+      "purpose": null,
+      "address": {
+        "source_notation": "A005",
+        "hex": "0xA005",
+        "decimal": 40965,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A13:F13"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "Detect Oil:1 / Not Detect Oil:0"
+    },
+    {
+      "key": "odu-row-14",
+      "name": "Inverter1 Backup",
+      "purpose": null,
+      "address": {
+        "source_notation": "A006",
+        "hex": "0xA006",
+        "decimal": 40966,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A14:F14"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "Used:1 / Not Used:0"
+    },
+    {
+      "key": "odu-row-15",
+      "name": "Inverter2 Backup",
+      "purpose": null,
+      "address": {
+        "source_notation": "A007",
+        "hex": "0xA007",
+        "decimal": 40967,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A15:F15"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "Used:1 / Not Used:0"
+    },
+    {
+      "key": "odu-row-16",
+      "name": "DDC",
+      "purpose": null,
+      "address": {
+        "source_notation": "A008",
+        "hex": "0xA008",
+        "decimal": 40968,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A16:F16"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1 / Off:0 (MultiV 5는 항상 0)"
+    },
+    {
+      "key": "odu-row-17",
+      "name": "Refrigerant Type",
+      "purpose": null,
+      "address": {
+        "source_notation": "A000",
+        "hex": "0xA000",
+        "decimal": 40960,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A17:F17"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "R407C:1 R22:2 R410A:3"
+    },
+    {
+      "key": "odu-row-18",
+      "name": "Fan1 Frequency",
+      "purpose": null,
+      "address": {
+        "source_notation": "A001",
+        "hex": "0xA001",
+        "decimal": 40961,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A18:F18"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-19",
+      "name": "High Pressure",
+      "purpose": null,
+      "address": {
+        "source_notation": "A002",
+        "hex": "0xA002",
+        "decimal": 40962,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A19:F19"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-20",
+      "name": "Low Pressure",
+      "purpose": null,
+      "address": {
+        "source_notation": "A003",
+        "hex": "0xA003",
+        "decimal": 40963,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A20:F20"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-21",
+      "name": "Compressor Suction Temp",
+      "purpose": null,
+      "address": {
+        "source_notation": "A004",
+        "hex": "0xA004",
+        "decimal": 40964,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A21:F21"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-22",
+      "name": "Liquid Pipe Temp",
+      "purpose": null,
+      "address": {
+        "source_notation": "A005",
+        "hex": "0xA005",
+        "decimal": 40965,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A22:F22"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-23",
+      "name": "Heat Exchange Temp",
+      "purpose": null,
+      "address": {
+        "source_notation": "A006",
+        "hex": "0xA006",
+        "decimal": 40966,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A23:F23"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-24",
+      "name": "Outdoor Unit EEV",
+      "purpose": null,
+      "address": {
+        "source_notation": "A007",
+        "hex": "0xA007",
+        "decimal": 40967,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A24:F24"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-25",
+      "name": "Over-cooler EEV",
+      "purpose": null,
+      "address": {
+        "source_notation": "A008",
+        "hex": "0xA008",
+        "decimal": 40968,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A25:F25"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-26",
+      "name": "Master Inverter1 Discharge Temp",
+      "purpose": null,
+      "address": {
+        "source_notation": "A009",
+        "hex": "0xA009",
+        "decimal": 40969,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A26:F26"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-27",
+      "name": "Air Temperature",
+      "purpose": null,
+      "address": {
+        "source_notation": "A00A",
+        "hex": "0xA00A",
+        "decimal": 40970,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A27:F27"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-28",
+      "name": "Operation Mode",
+      "purpose": null,
+      "address": {
+        "source_notation": "A00B",
+        "hex": "0xA00B",
+        "decimal": 40971,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A28:F28"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "Stop:1 Cool:2 Heat:3"
+    },
+    {
+      "key": "odu-row-29",
+      "name": "Error Code",
+      "purpose": null,
+      "address": {
+        "source_notation": "A00C",
+        "hex": "0xA00C",
+        "decimal": 40972,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A29:F29"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "0~255"
+    },
+    {
+      "key": "odu-row-30",
+      "name": "Master Inverter1 Compressor Frequency",
+      "purpose": null,
+      "address": {
+        "source_notation": "A00D",
+        "hex": "0xA00D",
+        "decimal": 40973,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A30:F30"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-31",
+      "name": "Master Inverter2 Compressor Frequency",
+      "purpose": null,
+      "address": {
+        "source_notation": "A00E",
+        "hex": "0xA00E",
+        "decimal": 40974,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A31:F31"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-32",
+      "name": "Fan2 Frequency",
+      "purpose": null,
+      "address": {
+        "source_notation": "A00F",
+        "hex": "0xA00F",
+        "decimal": 40975,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A32:F32"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-33",
+      "name": "Master Inverter2 Discharge Temp",
+      "purpose": null,
+      "address": {
+        "source_notation": "A010",
+        "hex": "0xA010",
+        "decimal": 40976,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A33:F33"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-34",
+      "name": "Std1 Discharge Temp",
+      "purpose": null,
+      "address": {
+        "source_notation": "A011",
+        "hex": "0xA011",
+        "decimal": 40977,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A34:F34"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "(MultiV 5는 항상 0)"
+    },
+    {
+      "key": "odu-row-35",
+      "name": "Std2 Discharge Temp",
+      "purpose": null,
+      "address": {
+        "source_notation": "A012",
+        "hex": "0xA012",
+        "decimal": 40978,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A35:F35"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "(MultiV 5는 항상 0)"
+    },
+    {
+      "key": "odu-row-36",
+      "name": "Upper Hex Temp",
+      "purpose": null,
+      "address": {
+        "source_notation": "A013",
+        "hex": "0xA013",
+        "decimal": 40979,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A36:F36"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-37",
+      "name": "Lower Hex Temp",
+      "purpose": null,
+      "address": {
+        "source_notation": "A014",
+        "hex": "0xA014",
+        "decimal": 40980,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A37:F37"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-38",
+      "name": "Sub Cool Pipe In Temp",
+      "purpose": null,
+      "address": {
+        "source_notation": "A015",
+        "hex": "0xA015",
+        "decimal": 40981,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A38:F38"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-39",
+      "name": "Sub Cool Pipe Out Temp",
+      "purpose": null,
+      "address": {
+        "source_notation": "A016",
+        "hex": "0xA016",
+        "decimal": 40982,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A39:F39"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-40",
+      "name": "Sub EEV Pulse",
+      "purpose": null,
+      "address": {
+        "source_notation": "A017",
+        "hex": "0xA017",
+        "decimal": 40983,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A40:F40"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-41",
+      "name": "Oil Equalizing EEV",
+      "purpose": null,
+      "address": {
+        "source_notation": "A018",
+        "hex": "0xA018",
+        "decimal": 40984,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A41:F41"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "(MultiV 5는 항상 0)"
+    },
+    {
+      "key": "odu-row-42",
+      "name": "Vapor Injection EEV1",
+      "purpose": null,
+      "address": {
+        "source_notation": "A019",
+        "hex": "0xA019",
+        "decimal": 40985,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A42:F42"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-43",
+      "name": "Vapor Injection EEV2",
+      "purpose": null,
+      "address": {
+        "source_notation": "A01A",
+        "hex": "0xA01A",
+        "decimal": 40986,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A43:F43"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-44",
+      "name": "Slave1 Inverter1 Compressor Frequency",
+      "purpose": null,
+      "address": {
+        "source_notation": "A01B",
+        "hex": "0xA01B",
+        "decimal": 40987,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A44:F44"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-45",
+      "name": "Slave1 Inverter2 Compressor Frequency",
+      "purpose": null,
+      "address": {
+        "source_notation": "A01C",
+        "hex": "0xA01C",
+        "decimal": 40988,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A45:F45"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-46",
+      "name": "Slave1 Inverter1 Discharge Temp",
+      "purpose": null,
+      "address": {
+        "source_notation": "A01D",
+        "hex": "0xA01D",
+        "decimal": 40989,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A46:F46"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    },
+    {
+      "key": "odu-row-47",
+      "name": "Slave1 Inverter2 Discharge Temp",
+      "purpose": null,
+      "address": {
+        "source_notation": "A01E",
+        "hex": "0xA01E",
+        "decimal": 40990,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "ODU",
+          "range": "A47:F47"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": ""
+    }
+  ],
+  "sources": [
+    "uploaded-xls"
+  ],
+  "conflicts": [],
+  "unknowns": [
+    "Gateway and document revision",
+    "Exact supported models",
+    "Address formula and convention",
+    "Transport and serial settings",
+    "Encoding and missing scales"
+  ],
+  "tests": []
+}
