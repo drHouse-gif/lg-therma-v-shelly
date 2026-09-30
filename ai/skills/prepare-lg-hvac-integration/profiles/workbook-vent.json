@@ -1,0 +1,766 @@
+{
+  "schema_version": "1.0",
+  "profile_id": "workbook-vent",
+  "family": "Vent",
+  "lg": {
+    "model": null,
+    "outdoor_model": null,
+    "controller": null,
+    "board_revision": null
+  },
+  "gateway": {
+    "required": null,
+    "model": null,
+    "firmware": null
+  },
+  "protocol": {
+    "name": null,
+    "map_revision": null,
+    "address_convention": null,
+    "unit_address": null,
+    "slave_id": null,
+    "baud": null,
+    "data_bits": null,
+    "parity": null,
+    "stop_bits": null
+  },
+  "shelly": {
+    "model": null,
+    "generation": null,
+    "firmware": null,
+    "addon": null,
+    "capacity_check": null
+  },
+  "compatibility_status": "gateway_unidentified",
+  "validation_status": "generated_untested",
+  "points": [
+    {
+      "key": "vent-row-8",
+      "name": "RUN/STOP",
+      "purpose": null,
+      "address": {
+        "source_notation": "4000",
+        "hex": "0x4000",
+        "decimal": 16384,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": [
+          5
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "Vent",
+          "range": "A8:F8"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1/Off:0"
+    },
+    {
+      "key": "vent-row-9",
+      "name": "Lock",
+      "purpose": null,
+      "address": {
+        "source_notation": "4001",
+        "hex": "0x4001",
+        "decimal": 16385,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": [
+          5
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "Vent",
+          "range": "A9:F9"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1/Off:0"
+    },
+    {
+      "key": "vent-row-10",
+      "name": "FILTER",
+      "purpose": null,
+      "address": {
+        "source_notation": "4002",
+        "hex": "0x4002",
+        "decimal": 16386,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": [
+          5
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "Vent",
+          "range": "A10:F10"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1/Off:0"
+    },
+    {
+      "key": "vent-row-11",
+      "name": "Alarm",
+      "purpose": null,
+      "address": {
+        "source_notation": "4003",
+        "hex": "0x4003",
+        "decimal": 16387,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "Vent",
+          "range": "A11:F11"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "Error:1/Normal:0"
+    },
+    {
+      "key": "vent-row-12",
+      "name": "HRV_AC_OPER",
+      "purpose": null,
+      "address": {
+        "source_notation": "4004",
+        "hex": "0x4004",
+        "decimal": 16388,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": [
+          5
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "Vent",
+          "range": "A12:F12"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1/Off:0"
+    },
+    {
+      "key": "vent-row-13",
+      "name": "HRV_HUMIDIFY",
+      "purpose": null,
+      "address": {
+        "source_notation": "4005",
+        "hex": "0x4005",
+        "decimal": 16389,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "coil",
+      "function_codes": {
+        "read": 1,
+        "write": [
+          5
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "Vent",
+          "range": "A13:F13"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "On:1/Off:0"
+    },
+    {
+      "key": "vent-row-14",
+      "name": "MODE",
+      "purpose": null,
+      "address": {
+        "source_notation": "4000",
+        "hex": "0x4000",
+        "decimal": 16384,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "Vent",
+          "range": "A14:F14"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "Hex:1 Auto:2 Normal:3"
+    },
+    {
+      "key": "vent-row-15",
+      "name": "FANSPEED",
+      "purpose": null,
+      "address": {
+        "source_notation": "4001",
+        "hex": "0x4001",
+        "decimal": 16385,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "Vent",
+          "range": "A15:F15"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "Low:1 High:2 SuperHigh:3 Auto:4"
+    },
+    {
+      "key": "vent-row-16",
+      "name": "USER_MODE",
+      "purpose": null,
+      "address": {
+        "source_notation": "4002",
+        "hex": "0x4002",
+        "decimal": 16386,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "Vent",
+          "range": "A16:F16"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "Quick:1 Saving:2 Heater:3 None:4 "
+    },
+    {
+      "key": "vent-row-17",
+      "name": "ERROR",
+      "purpose": null,
+      "address": {
+        "source_notation": "4003",
+        "hex": "0x4003",
+        "decimal": 16387,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": null
+      },
+      "rights": {
+        "read": true,
+        "write": false
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "Vent",
+          "range": "A17:F17"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "0 ~ 242"
+    },
+    {
+      "key": "vent-row-18",
+      "name": "HRV_AC_MODE",
+      "purpose": null,
+      "address": {
+        "source_notation": "4004",
+        "hex": "0x4004",
+        "decimal": 16388,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "Vent",
+          "range": "A18:F18"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "COOL:1 AUTO:2 HEAT:3"
+    },
+    {
+      "key": "vent-row-19",
+      "name": "HRV_SETTEMP",
+      "purpose": null,
+      "address": {
+        "source_notation": "4005",
+        "hex": "0x4005",
+        "decimal": 16389,
+        "convention": "workbook Modbus address; base/index and gateway applicability unconfirmed",
+        "wire_offset": null
+      },
+      "register_type": "holding_register",
+      "function_codes": {
+        "read": 3,
+        "write": [
+          6
+        ]
+      },
+      "rights": {
+        "read": true,
+        "write": true
+      },
+      "encoding": {
+        "data_type": null,
+        "signed": null,
+        "register_count": null,
+        "byte_order": null,
+        "word_order": null
+      },
+      "conversion": {
+        "scale": null,
+        "offset": null,
+        "unit": null,
+        "minimum": null,
+        "maximum": null,
+        "enum": null
+      },
+      "restrictions": [
+        "No identified gateway/model compatibility. Do not use for machine writes."
+      ],
+      "sources": [
+        {
+          "id": "uploaded-xls",
+          "sheet": "Vent",
+          "range": "A19:F19"
+        }
+      ],
+      "evidence_status": "documented_in_unattributed_workbook",
+      "lg_support": null,
+      "shelly_component": null,
+      "cloud": {
+        "display": null,
+        "control": null,
+        "evidence": null
+      },
+      "unknowns": [
+        "Data encoding/scale/units/range must be reviewed from raw meaning and gateway documentation; normalized values intentionally unapproved."
+      ],
+      "raw_value_meaning": "16 ~ 30°C"
+    }
+  ],
+  "sources": [
+    "uploaded-xls"
+  ],
+  "conflicts": [],
+  "unknowns": [
+    "Gateway and document revision",
+    "Exact supported models",
+    "Address formula and convention",
+    "Transport and serial settings",
+    "Encoding and missing scales"
+  ],
+  "tests": []
+}
