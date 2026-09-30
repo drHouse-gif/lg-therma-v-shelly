@@ -1,0 +1,292 @@
+{
+  "sheet": "Aircon",
+  "extraction": "xlrd cached cell values, not recalculated formulas",
+  "rows": [
+    {
+      "row": 1,
+      "cells": [
+        "Input Address as Hexadecimal number",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 2,
+      "cells": [
+        "Address",
+        0.0,
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 3,
+      "cells": [
+        "다음번호 실내기는 modbus address(decimal) +16",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 4,
+      "cells": [
+        "※ Aircon ",
+        "00",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 5,
+      "cells": [
+        "Point",
+        "Modbus \nAddress\n(decimal)",
+        "Modbus \nAddress\n(hexadecimal)",
+        "Function\nCode",
+        "Object Name\n(XXX : Unit Address Number)",
+        "Value & Meaning"
+      ]
+    },
+    {
+      "row": 6,
+      "cells": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 7,
+      "cells": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "row": 8,
+      "cells": [
+        1.0,
+        0.0,
+        "0",
+        "01/05",
+        "RUN/STOP",
+        "On:1/Off:0"
+      ]
+    },
+    {
+      "row": 9,
+      "cells": [
+        2.0,
+        1.0,
+        "1",
+        "01/05",
+        "SWING",
+        "On:1/Off:0"
+      ]
+    },
+    {
+      "row": 10,
+      "cells": [
+        3.0,
+        2.0,
+        "2",
+        "01/05",
+        "Lock",
+        "On:1/Off:0"
+      ]
+    },
+    {
+      "row": 11,
+      "cells": [
+        4.0,
+        3.0,
+        "3",
+        "01/05",
+        "ModeLock",
+        "On:1/Off:0"
+      ]
+    },
+    {
+      "row": 12,
+      "cells": [
+        5.0,
+        4.0,
+        "4",
+        "01/05",
+        "FanLock",
+        "On:1/Off:0"
+      ]
+    },
+    {
+      "row": 13,
+      "cells": [
+        6.0,
+        5.0,
+        "5",
+        "01/05",
+        "TempLock",
+        "On:1/Off:0"
+      ]
+    },
+    {
+      "row": 14,
+      "cells": [
+        7.0,
+        6.0,
+        "6",
+        "01",
+        "Alarm",
+        "Error:1/Normal:0"
+      ]
+    },
+    {
+      "row": 15,
+      "cells": [
+        1.0,
+        0.0,
+        "0",
+        "03/06",
+        "MODE",
+        "Cool:1 Dry:2 Fan:3 Auto:4 Heat:5"
+      ]
+    },
+    {
+      "row": 16,
+      "cells": [
+        2.0,
+        1.0,
+        "1",
+        "03/06",
+        "FANSPEED",
+        "Low:1 Med:2 High:3 Auto:4"
+      ]
+    },
+    {
+      "row": 17,
+      "cells": [
+        3.0,
+        2.0,
+        "2",
+        "03/06",
+        "SETTEMP",
+        "16 ~ 30°C"
+      ]
+    },
+    {
+      "row": 18,
+      "cells": [
+        4.0,
+        3.0,
+        "3",
+        "03/06",
+        "UP_SETTEMP",
+        "18 ~ 30°C"
+      ]
+    },
+    {
+      "row": 19,
+      "cells": [
+        5.0,
+        4.0,
+        "4",
+        "03/06",
+        "LO_SETTEMP",
+        "16 ~ 30°C"
+      ]
+    },
+    {
+      "row": 20,
+      "cells": [
+        6.0,
+        5.0,
+        "5",
+        "03",
+        "ROOMTEMP",
+        "signed(0도 미만일 경우)"
+      ]
+    },
+    {
+      "row": 21,
+      "cells": [
+        7.0,
+        6.0,
+        "6",
+        "03",
+        "ERROR",
+        "0 ~ 242"
+      ]
+    },
+    {
+      "row": 22,
+      "cells": [
+        8.0,
+        7.0,
+        "7",
+        "03",
+        "ACCUM_POWER(LOW)",
+        "Accumulated power usage low 2 bytes"
+      ]
+    },
+    {
+      "row": 23,
+      "cells": [
+        9.0,
+        8.0,
+        "8",
+        "03",
+        "ACCUM_POWER(HIGH)",
+        "Accumulated power usage high 2 bytes"
+      ]
+    },
+    {
+      "row": 24,
+      "cells": [
+        10.0,
+        9.0,
+        "9",
+        "03",
+        "ACCUM_GAS(LOW)",
+        "Accumulated gas usage low 2 bytes"
+      ]
+    },
+    {
+      "row": 25,
+      "cells": [
+        11.0,
+        10.0,
+        "A",
+        "03",
+        "ACCUM_GAS(HIGH)",
+        "Accumulated gas usage high 2 bytes"
+      ]
+    },
+    {
+      "row": 26,
+      "cells": [
+        12.0,
+        11.0,
+        "B",
+        "03",
+        "Humidity Status",
+        "0 ~ 100％"
+      ]
+    }
+  ]
+}
