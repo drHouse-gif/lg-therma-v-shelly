@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="LG HVAC for Shelly community icon">
+  <rect width="512" height="512" rx="96" fill="#111827"/>
+  <path d="M112 288h104l40-128 48 192 32-96h64" fill="none" stroke="#ffffff" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="112" cy="288" r="18" fill="#ffffff"/>
+  <circle cx="400" cy="256" r="18" fill="#ffffff"/>
+</svg>
